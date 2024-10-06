@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const Projects = () => {
 
