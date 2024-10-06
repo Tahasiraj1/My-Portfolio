@@ -28,7 +28,7 @@ const Contact = () => {
     }, (error) => {
       console.log("Failed to send message:", error.text);
     });
-    e.currentTarget.reset();
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const handleProfileViews = (Link: string): void => {
@@ -52,7 +52,7 @@ const Contact = () => {
         <Label htmlFor='name'>Name:</Label>
         <Input
           id='name'
-          type='text'
+          type='name'
           placeholder='Enter your name'
           value={formData.name}
           onChange={handleChange} // Handle input change
@@ -72,6 +72,7 @@ const Contact = () => {
         <Label className='mt-4' htmlFor='message'>Message:</Label>
         <Textarea
           id='message'
+          name='message'
           placeholder='Enter your message'
           rows={3}
           value={formData.message}
