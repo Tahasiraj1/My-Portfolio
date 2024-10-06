@@ -52,6 +52,7 @@ const Contact = () => {
         <Label htmlFor='name'>Name:</Label>
         <Input
           id='name'
+          name='name'
           type='name'
           placeholder='Enter your name'
           value={formData.name}
@@ -62,6 +63,7 @@ const Contact = () => {
         <Label className='mt-4' htmlFor='email'>Email:</Label>
         <Input
           id='email'
+          name='email'
           type='email' // Correct email type
           placeholder='Enter your email'
           value={formData.email}
@@ -128,5 +130,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
