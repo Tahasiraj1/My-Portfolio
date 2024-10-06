@@ -22,7 +22,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.sendForm("service_kb0095m", "template_drjojyg", e.currentTarget, "bTwY4Z7BY_xc4CM9q")
+    emailjs.send("service_kb0095m", "template_drjojyg", e.currentTarget, "bTwY4Z7BY_xc4CM9q")
     .then((result) => {
       console.log("Message sent successfully:", result.text);
     }, (error) => {
