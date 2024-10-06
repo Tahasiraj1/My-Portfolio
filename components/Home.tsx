@@ -28,7 +28,7 @@ const Home = () => {
         <div className='flex flex-col tracking-tighter md:mr-5'>
         <h1 className='animate-in slide-in-from-left-full transition-transform transform duration-300 bg-gradient-to-b from-emerald-950 via-green-700 to-teal-800 bg-clip-text text-transparent'>
           Hello!<br/>
-          I'm Taha Siraj.<br/>
+          I&rsquo;m Taha Siraj.<br/>
           A Web Developer,<br/>
           Exploring the<br/>
           Realm of<br/>

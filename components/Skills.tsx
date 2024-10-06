@@ -133,7 +133,7 @@ const Skills = () => {
       </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
-        Intermediate, with a strong grasp of building responsive and modern designs quickly using Tailwind's utility classes.
+        Intermediate, with a strong grasp of building responsive and modern designs quickly using Tailwind&rsquo;s utility classes.
       </h3>
       <h4 className='text-lg ml-4 font-mono mb-4'>
         <strong>Experience:</strong><br/>
@@ -168,7 +168,7 @@ const Skills = () => {
         <strong>Node.js</strong>
       </h1>
       <h2 className='text-lg font-mono mb-6'>
-      Node.js is a JavaScript runtime built on Chrome's V8 engine, allowing you to build fast, scalable server-side applications.
+      Node.js is a JavaScript runtime built on Chrome&rsquo;s V8 engine, allowing you to build fast, scalable server-side applications.
       </h2>
       </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>

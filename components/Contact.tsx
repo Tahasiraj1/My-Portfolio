@@ -44,7 +44,7 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         >
         <h1 className='py-1 flex justify-center mb-8 font-bold text-3xl text-green-400'>
-            Let's Connect
+            Let&rsquo;s Connect
         </h1>
         </motion.div>
         </div>
@@ -112,8 +112,8 @@ const Contact = () => {
       >
       <p className='mt-8 text-lg font-mono'>
       Stay connected and join my journey!<br/><br/>
-      ✦ Follow me on <strong>LinkedIn</strong> to stay updated on my professional growth, tech insights, and exciting projects I'm working on.<br/><br/>
-      ✦ Connect with me on <strong>GitHub</strong> where I share open-source contributions, coding challenges, and the latest projects I'm developing.
+      ✦ Follow me on <strong>LinkedIn</strong> to stay updated on my professional growth, tech insights, and exciting projects I&rsquo;m working on.<br/><br/>
+      ✦ Connect with me on <strong>GitHub</strong> where I share open-source contributions, coding challenges, and the latest projects I&rsquo;m developing.
       </p>
       </motion.div>
     </div>

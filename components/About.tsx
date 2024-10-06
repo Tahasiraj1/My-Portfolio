@@ -78,7 +78,7 @@ const About = () => {
                 <strong>✦ A Personal Note</strong>
             </h5>
             <p className='font-mono text-lg'>
-            Beyond coding, I am a firm believer in the power of perseverance and continuous learning. I approach every challenge as an opportunity to grow, whether it's debugging a tricky piece of code or learning a new framework. I enjoy collaborating with fellow developers, sharing knowledge, and contributing to projects that make a difference.
+            Beyond coding, I am a firm believer in the power of perseverance and continuous learning. I approach every challenge as an opportunity to grow, whether it&rsquo;s debugging a tricky piece of code or learning a new framework. I enjoy collaborating with fellow developers, sharing knowledge, and contributing to projects that make a difference.
             </p>
         </article>
       </div>
