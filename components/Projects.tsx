@@ -3,12 +3,17 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 const Projects = () => {
 
     const handleViewProjects = (Link: string): void => {
         window.open(Link);
     };
+
+    const handleScrollToTop = (): void => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      };
 
   return (
     <div className='p-6'>
@@ -455,7 +460,17 @@ const Projects = () => {
                 </h3>
                 </div>
               </article>
-        </div>
+             </div>
+            <div className="flex justify-end mb-5">
+            <Button
+            variant="ghost"
+            size="icon"
+            className='bg-emerald-500 hover:bg-emerald-600 rounded-full'
+            onClick={handleScrollToTop}
+            >
+                <FaArrowAltCircleUp size={40} className='active:scale-90 transition-transform transform duration-0' />
+            </Button>
+            </div>
     </div>
   );
 }

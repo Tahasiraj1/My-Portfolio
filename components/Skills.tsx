@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { ImHtmlFive } from "react-icons/im";
 import { SiCss3 } from "react-icons/si";
@@ -7,9 +8,16 @@ import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiShadcnui } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { FaArrowAltCircleUp } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 
 
 const Skills = () => {
+
+  const handleScrollToTop = (): void => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  };
+
   return (
     <div className='flex flex-col justify-center p-8 md:px-40 animate-in slide-in-from-bottom-full transition-transform transform duration-500'>
         {/* HTML */}
@@ -172,8 +180,18 @@ const Skills = () => {
         Developed interactive CLI tools using inquirer and chalk for quizzes and user input processing.
       </h4>
       </article>
+      <div className="flex justify-end mr-2 md:mr-5 mb-10">
+        <Button
+        variant="ghost"
+        size="icon"
+        className='bg-emerald-500 hover:bg-emerald-600 rounded-full'
+        onClick={handleScrollToTop}
+        >
+          <FaArrowAltCircleUp size={40} className='active:scale-90 transition-transform transform duration-0' />
+        </Button>
+        </div>
     </div>
-  )
+  );
 }
 
 export default Skills
