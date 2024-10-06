@@ -39,7 +39,7 @@ const Contact = () => {
     <div className='pb-20 pt-16 px-20 lg:px-96 md:px-72'>
         <div className='bg-emerald-950 rounded-full'>
         <motion.div
-        initial={{ x: 400 }}
+        initial={{ x: 50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
         >
@@ -87,9 +87,15 @@ const Contact = () => {
         </Button>
       </form>
       <div className='bg-emerald-950 my-10 rounded-full'>
+      <motion.div
+        initial={{ x: 50 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+        >
         <h2 className='py-1 animate-in slide-in-from-right-full transition-transform transform duration-300 flex justify-center mb-6 font-bold text-3xl text-green-400'>
             Social network
         </h2>
+        </motion.div>
       </div>
       <div className=' flex justify-center gap-8'>
         <Button
@@ -121,4 +127,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
