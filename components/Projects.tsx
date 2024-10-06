@@ -34,7 +34,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='flex flex-row text-black text-lg'>Search Movies & Browse popular flicks.
+                <h3 className='flex flex-row text-black text-lg mt-2'>
+                    Search Movies & Browse popular flicks.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -57,7 +58,8 @@ const Projects = () => {
             height={100}
             className='h-96 rounded-2xl'
             />
-            <h3 className='text-black text-lg flex flex-row'>Create secure passwords with few clicks.
+            <h3 className='text-black text-lg flex flex-row mt-2'>
+                Create secure passwords with few clicks.
             <Button
             variant="ghost"
             size="icon"
@@ -80,7 +82,8 @@ const Projects = () => {
             height={100}
             className='h-96 rounded-2xl'
             />
-            <h3 className='text-black text-lg flex flex-row'>Transforms time into a valuable ally.
+            <h3 className='text-black text-lg flex flex-row mt-2'>
+                Transforms time into a valuable ally.
             <Button
             variant="ghost"
             size="icon"
@@ -103,7 +106,8 @@ const Projects = () => {
             height={100}
             className='h-96 rounded-2xl'
             />
-            <h3 className='text-black text-lg flex flex-row'>Easily calculate your BMI.
+            <h3 className='text-black text-lg flex flex-row mt-2'>
+                Easily calculate your BMI.
             <Button
             variant="ghost"
             size="icon"
@@ -126,7 +130,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Create custom memes with our easy-to-use generator.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Create custom memes with our easy-to-use generator.
                 <Button
                 variant="ghost"
                 size="icon"
@@ -149,7 +154,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>This app makes it easy to calculate your tip and total bill amount.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    This app makes it easy to calculate your tip and total bill amount.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -172,7 +178,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Convert between various currencies seamlessly.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Convert between various currencies seamlessly.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -195,7 +202,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Search your favourite movies & get detailed information.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Search your favourite movies & get detailed information.
                 <Button
                     variant="ghost"
                     size="icon"
@@ -218,7 +226,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>This tool allows users to input HTML code and instantly see the rendered result.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    This tool allows users to input HTML code and instantly see the rendered result.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -241,7 +250,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>This application allows users to easily manage their expenses, providing a clear view of their financial habits.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    This application allows users to easily manage their expenses, providing a clear view of their financial habits.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -264,7 +274,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>A simple Calculator app.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    A simple Calculator app.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -287,7 +298,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Switch between different units for length, weight, and volume, & Perform conversion.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Switch between different units for length, weight, and volume, & Perform conversion.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -310,7 +322,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Digital Clock with 12/24-Hour Toggle.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Digital Clock with 12/24-Hour Toggle.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -333,7 +346,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Fetches random jokes from an external API.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Fetches random jokes from an external API.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -356,7 +370,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Celebrate your birthday with confetti bursts.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Celebrate your birthday with confetti bursts.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -379,7 +394,8 @@ const Projects = () => {
                 height={100}
                 className='h-96 rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Pick colors & view their hex and RGB values.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Pick colors & view their hex and RGB values.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -400,9 +416,10 @@ const Projects = () => {
                 alt='Number Guessing Game'
                 width={400}
                 height={100}
-                className='h-96 rounded-2xl'
+                className='h-96 w-fit rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Guess a number that falls between 1 and 10.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Guess a number that falls between 1 and 10.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -423,9 +440,10 @@ const Projects = () => {
                 alt='Weather Widget'
                 width={400}
                 height={100}
-                className='h-96 rounded-2xl'
+                className='h-96 rounded-2xl w-fit'
                 />
-                <h3 className='text-black text-lg flex flex-row'>Search current weather for any city & get tailored messages based on weather conditions.
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    Search current weather for any city & get tailored messages based on weather conditions.
                     <Button
                     variant="ghost"
                     size="icon"
@@ -446,9 +464,10 @@ const Projects = () => {
                 alt='Countdown Timer'
                 width={400}
                 height={100}
-                className='h-96 rounded-2xl'
+                className='h-96 w-fit rounded-2xl'
                 />
-                <h3 className='text-black text-lg flex flex-row'>The timer features start, pause, resume, and reset functionalities
+                <h3 className='text-black text-lg flex flex-row mt-2'>
+                    The timer features start, pause, resume, and reset functionalities
                     <Button
                     variant="ghost"
                     size="icon"
@@ -474,5 +493,7 @@ const Projects = () => {
     </div>
   );
 }
+
+export default Projects
 
 export default Projects
