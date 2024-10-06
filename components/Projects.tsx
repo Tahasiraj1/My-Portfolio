@@ -22,7 +22,7 @@ const Projects = () => {
                 <strong>Next.JS Projects</strong>
             </h1>
         </div>
-        <div className='grid md:grid-cols-3 grid-cols-2 gap-5 animate-in slide-in-from-bottom-full transition-transform transform duration-300'>
+        <div className='grid md:grid-cols-3 grid-cols-1 gap-5 animate-in slide-in-from-bottom-full transition-transform transform duration-300'>
             {/* Project-1 */}
             <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
                 <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
