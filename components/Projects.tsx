@@ -13,14 +13,14 @@ const Projects = () => {
   return (
     <div className='p-6'>
         <div className='bg-emerald-950 rounded-full h-10 m-4 my-8'>
-            <h1 className='text-teal-400 font-bold text-2xl text-center pt-1 animate-in slide-in-from-right-full transition-transform transform duration-300'>
+            <h1 className='text-green-400 font-bold text-2xl text-center pt-1 animate-in slide-in-from-right-full transition-transform transform duration-300'>
                 <strong>Next.JS Projects</strong>
             </h1>
         </div>
         <div className='grid md:grid-cols-3 grid-cols-2 gap-5 animate-in slide-in-from-bottom-full transition-transform transform duration-300'>
             {/* Project-1 */}
             <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-                <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+                <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>MovieVerse</h2>
                 <Image
                 src="/MovieAppPicForPortfolio.PNG"
@@ -43,7 +43,7 @@ const Projects = () => {
             </article>
             {/* Project-2 */}
             <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-            <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+            <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Password Generator</h2>
                 <Image
             src="/passwordgenerator.PNG"
@@ -66,7 +66,7 @@ const Projects = () => {
             </article>
             {/* Project-3 */}
             <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-            <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+            <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
               <h2 className='text-lg font-bold text-center'>Pomodoro Timer</h2>
             <Image
             src="/PomodoroTimer.PNG"
@@ -89,7 +89,7 @@ const Projects = () => {
               </article>
               {/* Project-4 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
               <h2 className='text-lg font-bold text-center'>BMI Calculator</h2>
             <Image
             src="/BMICalculator.PNG"
@@ -112,7 +112,7 @@ const Projects = () => {
               </article>
               {/* Project-5 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Meme Generator</h2>
                 <Image
                 src="/Meme-Generator.PNG"
@@ -135,7 +135,7 @@ const Projects = () => {
               </article>
               {/* Project-6 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Tip Calculator</h2>
                 <Image
                 src="/TipCalculator.png"
@@ -158,7 +158,7 @@ const Projects = () => {
               </article>
               {/* Project-7 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Currency Converter</h2>
                 <Image
                 src="/CurrencyConverter.PNG"
@@ -181,7 +181,7 @@ const Projects = () => {
               </article>
               {/* Project-8 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Movie Search App</h2>
                 <Image
                 src="/MovieSearch.PNG"
@@ -204,7 +204,7 @@ const Projects = () => {
               </article>
               {/* Project-9 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>HTML Previewer</h2>
                 <Image
                 src="/HTMLPreviewer.PNG"
@@ -227,7 +227,7 @@ const Projects = () => {
               </article>
               {/* Project-10 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Expense Tracker</h2>
                 <Image
                 src="/Expense-Tracker.PNG"
@@ -250,7 +250,7 @@ const Projects = () => {
               </article>
               {/* Project-11 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Calculator</h2>
                 <Image
                 src="/simpleCalculator.png"
@@ -273,7 +273,7 @@ const Projects = () => {
               </article>
               {/* Project-12 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Unit Converter</h2>
                 <Image
                 src="/UnitConverter.PNG"
@@ -296,7 +296,7 @@ const Projects = () => {
               </article>
               {/* Project-13 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Digital Clock</h2>
                 <Image
                 src="/digitalclock1.PNG"
@@ -319,7 +319,7 @@ const Projects = () => {
               </article>
               {/* Project-14 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-                <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+                <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Random Joke Generator</h2>
                 <Image
                 src="/randomjokegenerator.png"
@@ -342,7 +342,7 @@ const Projects = () => {
               </article>
               {/* Project-15 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Birthday Celebration App</h2>
                 <Image
                 src="/BirthdayWishNext.js.png"
@@ -365,7 +365,7 @@ const Projects = () => {
               </article>
               {/* Project-16 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Color Picker App</h2>
                 <Image
                 src="/ColorPicker.PNG"
@@ -388,7 +388,7 @@ const Projects = () => {
               </article>
               {/* Project-17 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Number Guessing Game</h2>
                 <Image
                 src="/numberguessinggame2next.png"
@@ -411,7 +411,7 @@ const Projects = () => {
               </article>
               {/* Project-18 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Weather Widget</h2>
                 <Image
                 src="/Weather-widget-next.js-project-2.PNG"
@@ -434,7 +434,7 @@ const Projects = () => {
               </article>
               {/* Project-19 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-2xl bg-opacity-70 mb-5'>
+              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
                 <h2 className='text-lg font-bold text-center'>Countdown Timer</h2>
                 <Image
                 src="/CountdownTimer.Nextjs.PNG"

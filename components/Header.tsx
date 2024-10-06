@@ -16,22 +16,22 @@ const Header = () => {
         </Link>
         <ul className='flex gap-2 md:gap-3 justify-center items-center mr-2 font-bold'>
             <Link href="/about">
-            <li className='text-teal-500 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
+            <li className='text-green-400 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
                 About
             </li>
             </Link>
             <Link href="/projects">
-            <li className='text-teal-500 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
+            <li className='text-green-400 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
                 Projects
             </li>
             </Link>
             <Link href="/skills">
-            <li className='text-teal-500 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
+            <li className='text-green-400 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
                 Skills
             </li>
             </Link>
             <Link href="/contact">
-            <li className='text-teal-500 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
+            <li className='text-green-400 text-lg hover:scale-110 active:scale-105 transition-transform transform duration:500'>
                 Contact
             </li>
             </Link>

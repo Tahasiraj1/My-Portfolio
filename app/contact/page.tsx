@@ -1,11 +1,12 @@
 import React from 'react'
+import Contact from '@/components/Contact';
 
-const About = () => {
+const contact = () => {
   return (
-    <div className='h-screen bg-green-500 text-black font-bold text-5xl flex justify-center'>
-      Contact Me
+    <div className='bg-gradient-to-b from-green-500 to-green-600'>
+      <Contact />
     </div>
   )
 }
 
-export default About
+export default contact

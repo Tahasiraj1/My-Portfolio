@@ -1,11 +1,12 @@
 import React from 'react'
+import Skills from '@/components/Skills'
 
-const Skills = () => {
+const skills = () => {
   return (
-    <div className='h-screen bg-red-500 text-5xl font-bold flex justify-center text-black'>
-      My Skills
+    <div className='bg-gradient-to-b from-green-500 to-green-600'>
+      <Skills />
     </div>
   )
 }
 
-export default Skills
+export default skills

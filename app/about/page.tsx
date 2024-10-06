@@ -1,11 +1,12 @@
 import React from 'react'
+import About from '@/components/About'
 
-const About = () => {
+const about = () => {
   return (
-    <div className='bg-orange-500 h-screen text-5xl font-bold flex justify-center text-black'>
-      About Me
+    <div className='bg-gradient-to-b from-green-400 to-green-500'>
+      <About />
     </div>
   )
 }
 
-export default About
+export default about

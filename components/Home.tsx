@@ -13,6 +13,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { motion } from 'framer-motion';
 
 const Home = () => {
 
@@ -45,24 +46,47 @@ const Home = () => {
         {/* About */}
         <section id='about'>
           <div className='bg-emerald-950 rounded-full text-center mx-6'>
-            <h2 className='animate-in slide-in-from-right-full transition-transform transform duration-300 py-2 m-6 text-teal-500 text-3xl'>
+            <motion.div
+            initial={{ x: 520 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            >
+            <h2 className='py-2 m-6 text-green-400 text-3xl'>
               <strong>About Me</strong>
             </h2>
+            </motion.div>
           </div>
-            <p className='m-4 font-mono text-emerald-950 text-base sm:text-lg animate-in slide-in-from-bottom-full transition-transform transform duration-300'>
+          <motion.div
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 1 }}
+          >
+            <p className='m-4 font-mono text-emerald-950 text-base sm:text-lg'>
             I am a dedicated Web developer currently honing my skills at Governor Initiative of Artificial Inteligence. My focus is on building robust and scalable web applications, driven by a deep passion for coding and problem-solving. 💻
             <br/>
             <br/>
             With a keen interest in Generative AI, I am consistently striving to expand my knowledge and expertise in this exciting field. My journey is marked by a commitment to continuous learning and innovation, aiming to create impactful and efficient solutions.
             </p>
+            </motion.div>
         </section>
         {/* Skills */}
         <section id='skills'>
         <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
-            <h2 className='animate-in slide-in-from-right-full transition-transform transform duration-300 py-2 m-6 text-teal-500 text-3xl'>
+          <motion.div
+          initial={{ x: 520 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+          >
+            <h2 className='py-2 m-6 text-green-400 text-3xl'>
               <strong>Skills</strong>
             </h2>
-          </div>
+          </motion.div>
+        </div>
+        <motion.div
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 1 }}
+          >
           <div className='flex flex-wrap justify-center gap-4 mb-5 ml-5 items-center'>
         <ImHtmlFive className='hover:scale-110 hover:fill-orange-700 mr-4' size={60} />
         <SiCss3 className='hover:scale-110 hover:fill-blue-500 mr-4' size={60} />
@@ -73,11 +97,25 @@ const Home = () => {
         <RiTailwindCssFill className='hover:scale-110 hover:fill-blue-600 mr-4' size={60} />
         <SiShadcnui className='hover:scale-110 hover:fill-white mr-4' size={45} />
           </div>
+          </motion.div>
         </section>
         {/* Projects */}
-        <h4 className='m-6 mt-8 py-2 text-3xl text-teal-500 bg-emerald-950 rounded-full text-center'>
-          <strong>Projects</strong>
-        </h4>
+        <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
+          <motion.div
+          initial={{ x: 520 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.5 }}
+          >
+            <h2 className='m-6 py-2 text-3xl text-green-400'>
+              <strong>Projects</strong>
+            </h2>
+          </motion.div>
+        </div>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5 }}
+          >
         <section id='projects' className='flex justify-center'>
           <div className='m-10 bg-stone-300 rounded-2xl shadow-2xl p-4 bg-opacity-50'>
             <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-6'>
@@ -158,6 +196,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        </motion.div>
         <div className="flex justify-end mr-2 md:mr-5 mb-10">
         <Button
         variant="ghost"
