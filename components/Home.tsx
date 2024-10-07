@@ -117,7 +117,7 @@ const Home = () => {
           transition={{ duration: 0.5 }}
           >
         <section id='projects' className='flex justify-center'>
-          <div className='m-10 bg-stone-300 rounded-2xl shadow-2xl p-4 bg-opacity-50'>
+          <div className='m-1 bg-stone-300 rounded-2xl shadow-2xl p-4 bg-opacity-50'>
             <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-6'>
               {/* Project-1 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
