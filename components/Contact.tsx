@@ -22,7 +22,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.send("service_kb0095m", "template_drjojyg", e.currentTarget, "bTwY4Z7BY_xc4CM9q")
+    emailjs.sendForm("service_kb0095m", "template_drjojyg", e.currentTarget, "bTwY4Z7BY_xc4CM9q")
     .then((result) => {
       console.log("Message sent successfully:", result.text);
     }, (error) => {
@@ -36,10 +36,10 @@ const Contact = () => {
   };
 
   return (
-    <div className='pb-20 pt-16 px-20 lg:px-96 md:px-72'>
+    <div className='pb-20 pt-16 px-12 lg:px-96 md:px-72'>
         <div className='bg-emerald-950 rounded-full'>
         <motion.div
-        initial={{ x: 50 }}
+        initial={{ x: 30 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
         >
@@ -91,12 +91,12 @@ const Contact = () => {
       </form>
       <div className='bg-emerald-950 my-10 rounded-full'>
       <motion.div
-        initial={{ x: 50 }}
+        initial={{ x: 30 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 0.5 }}
         >
         <h2 className='py-1 animate-in slide-in-from-right-full transition-transform transform duration-300 flex justify-center mb-6 font-bold text-3xl text-green-400'>
-            Social network
+            Follow Me
         </h2>
         </motion.div>
       </div>
@@ -121,12 +121,13 @@ const Contact = () => {
       >
       <p className='mt-8 text-lg font-mono'>
       Stay connected and join my journey!<br/><br/>
-      ✦ Follow me on <strong>LinkedIn</strong> to stay updated on my professional growth, tech insights, and exciting projects I&rsquo;m working on.<br/><br/>
-      ✦ Connect with me on <strong>GitHub</strong> where I share open-source contributions, coding challenges, and the latest projects I&rsquo;m developing.
+      ✦ Connect with me on <strong>LinkedIn</strong> to stay updated on my professional growth, tech insights, and exciting projects I&rsquo;m working on.<br/><br/>
+      ✦ Follow me on <strong>GitHub</strong> where I share open-source contributions, coding challenges, and the latest projects I&rsquo;m developing.
       </p>
       </motion.div>
     </div>
   );
 };
 
+export default Contact;
 export default Contact;
