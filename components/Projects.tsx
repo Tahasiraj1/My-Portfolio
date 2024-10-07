@@ -20,7 +20,7 @@ const Projects = () => {
     <div className='p-6'>
         <div className='bg-emerald-950 rounded-full h-10 m-4 my-8'>
             <motion.div
-            initial={{ x: 50 }}
+            initial={{ x: 30 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5 }}
             >
