@@ -47,7 +47,7 @@ const Home = () => {
         <section id='about'>
           <div className='bg-emerald-950 rounded-full text-center mx-6'>
             <motion.div
-            initial={{ x: 30 }}
+            initial={{ x: 40 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5 }}
             >
@@ -73,7 +73,7 @@ const Home = () => {
         <section id='skills'>
         <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
           <motion.div
-          initial={{ x: 30 }}
+          initial={{ x: 40 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           >
@@ -102,7 +102,7 @@ const Home = () => {
         {/* Projects */}
         <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
           <motion.div
-          initial={{ x: 30 }}
+          initial={{ x: 40 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           >
