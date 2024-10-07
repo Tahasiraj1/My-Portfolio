@@ -3,7 +3,7 @@ import About from '@/components/About'
 
 const about = () => {
   return (
-    <div className='bg-gradient-to-b from-green-400 to-green-500'>
+    <div className='bg-gradient-to-b from-green-300 to-green-400'>
       <About />
     </div>
   )
