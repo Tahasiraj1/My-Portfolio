@@ -57,6 +57,7 @@ const Contact = () => {
           placeholder='Enter your name'
           value={formData.name}
           onChange={handleChange} // Handle input change
+          required
           className='items-center mt-2 bg-emerald-100'
         />
         
@@ -68,6 +69,7 @@ const Contact = () => {
           placeholder='Enter your email'
           value={formData.email}
           onChange={handleChange} // Handle input change
+          required
           className='items-center mt-2 bg-emerald-100'
         />
 
@@ -79,6 +81,7 @@ const Contact = () => {
           rows={3}
           value={formData.message}
           onChange={handleChange} // Handle input change
+          required
           className='items-center mt-2 bg-emerald-100'
         />
 
