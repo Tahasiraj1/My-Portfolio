@@ -53,7 +53,7 @@ const Skills = () => {
       </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
-        Advanced, with hands-on experience in creating responsive and modern UI designs using frameworks like Tailwind CSS and animations.
+        Intermediate, with hands-on experience in creating responsive and modern UI designs using frameworks like Tailwind CSS and animations.
       </h3>
       <h4 className='text-lg ml-4 font-mono mb-4'>
         <strong>Experience:</strong><br/>
@@ -93,7 +93,7 @@ const Skills = () => {
       </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
-        Intermediate to Advanced, with expertise in building reusable components, managing state with useState, and handling side effects with useEffect.
+        Intermediate, with expertise in building reusable components, managing state with useState, and handling side effects with useEffect.
       </h3>
       <h4 className='text-lg ml-4 font-mono mb-4'>
         <strong>Experience:</strong><br/>
