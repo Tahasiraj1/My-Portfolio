@@ -241,10 +241,7 @@ const Home = () => {
               </article>
             </div>
             <div className='flex justify-center mt-5'>
-              <Link href="/projects"
-                target="_blank"
-                prefetch={false}  
-              >
+              <Link href="/projects">
             <Button
             type='button'
             className='w-24 rounded-full bg-emerald-900 hover:bg-emerald-700 active:scale-95'
