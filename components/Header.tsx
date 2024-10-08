@@ -7,6 +7,11 @@ import { motion } from 'framer-motion';
 const Header = () => {
   return (
     <header className='bg-emerald-950 flex flex-row justify-between items-center p-1 lg:p-2'>
+        <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        >  
         <Link href="/">
         <Image
         src="/profile1.jpeg"
@@ -16,7 +21,7 @@ const Header = () => {
         className='rounded-full active:scale-95 transition-transform transform duration-700'
         />
         </Link>
-
+        </motion.div>
         <ul className='flex gap-2 md:gap-3 justify-center items-center mr-2 font-thin lg:font-bold'>
         <motion.div
         initial={{ y: -50 }}
