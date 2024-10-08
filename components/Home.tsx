@@ -174,7 +174,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Search Movies & Browse popular flicks.
-              <Link href="https://movie-app-gules-alpha.vercel.app/">
+              <Link href="https://movie-app-gules-alpha.vercel.app/"
+                target="_blank"
+                prefetch={false}
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
@@ -190,7 +193,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Create a secure password with just few clicks.
-              <Link href="https://password-generator-project-9-next-js.vercel.app/">
+              <Link href="https://password-generator-project-9-next-js.vercel.app/"
+                target="_blank"
+                prefetch={false}  
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
@@ -206,7 +212,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Transforms time into a valuable ally.
-              <Link href="https://pomodoro-timer-project-14-next-js.vercel.app/">
+              <Link href="https://pomodoro-timer-project-14-next-js.vercel.app/"
+                target="_blank"
+                prefetch={false}  
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
@@ -222,14 +231,20 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Easily calculate your BMI.
-              <Link href="https://bmi-calculator-project-11-next-js.vercel.app/">
+              <Link href="https://bmi-calculator-project-11-next-js.vercel.app/"
+                target="_blank"
+                prefetch={false}  
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
               </article>
             </div>
             <div className='flex justify-center mt-5'>
-              <Link href="/projects">
+              <Link href="/projects"
+                target="_blank"
+                prefetch={false}  
+              >
             <Button
             type='button'
             className='w-24 rounded-full bg-emerald-900 hover:bg-emerald-700 active:scale-95'
