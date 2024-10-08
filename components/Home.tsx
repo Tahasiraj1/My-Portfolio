@@ -82,22 +82,64 @@ const Home = () => {
             </h2>
           </motion.div>
         </div>
-        <motion.div
-           initial={{ opacity: 0, y: 50 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 1 }}
-          >
           <div className='flex flex-wrap justify-center gap-4 mb-5 ml-5 items-center'>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            >
         <ImHtmlFive className='hover:scale-110 hover:fill-orange-700 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            >
         <SiCss3 className='hover:scale-110 hover:fill-blue-500 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.9 }}
+            >
         <FaNodeJs className='hover:scale-110 hover:fill-lime-400 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.1 }}
+            >
         <SiTypescript className='hover:scale-110 hover:fill-blue-700 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.3 }}
+            >
         <FaReact className='hover:scale-110 hover:fill-sky-700 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
         <RiNextjsFill className='hover:scale-110 hover:fill-white mr-4' size={60} />
+            </motion.div>            
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.7 }}
+            >
         <RiTailwindCssFill className='hover:scale-110 hover:fill-blue-600 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.9 }}
+            >
         <SiShadcnui className='hover:scale-110 hover:fill-white mr-4' size={45} />
+            </motion.div>
           </div>
-          </motion.div>
         </section>
         {/* Projects */}
         <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
