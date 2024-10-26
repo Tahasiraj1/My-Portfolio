@@ -11,6 +11,7 @@ const Header = () => {
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+        viewport={{ once: true }}
         >  
         <Link href="/">
         <Image
@@ -27,6 +28,7 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.1 }}
+        viewport={{ once: true }}
         >
         <Link href="/">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -38,6 +40,7 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.3 }}
+        viewport={{ once: true }}
         >
             <Link href="/about">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -49,6 +52,7 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         >
             <Link href="/projects">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -60,6 +64,7 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.9 }}
+        viewport={{ once: true }}
         >
             <Link href="/skills">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -71,6 +76,7 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1.2 }}
+        viewport={{ once: true }}
         >
             <Link href="/contact">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
