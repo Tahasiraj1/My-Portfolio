@@ -87,7 +87,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <ImHtmlFive className='hover:scale-110 hover:fill-orange-700 mr-4' size={60} />
             </motion.div>
@@ -95,7 +94,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.7, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <SiCss3 className='hover:scale-110 hover:fill-blue-500 mr-4' size={60} />
             </motion.div>
@@ -103,7 +101,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.9, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <FaNodeJs className='hover:scale-110 hover:fill-lime-400 mr-4' size={60} />
             </motion.div>
@@ -111,7 +108,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.1, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <SiTypescript className='hover:scale-110 hover:fill-blue-700 mr-4' size={60} />
             </motion.div>
@@ -119,7 +115,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.3, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <FaReact className='hover:scale-110 hover:fill-sky-700 mr-4' size={60} />
             </motion.div>
@@ -127,7 +122,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.5, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <RiNextjsFill className='hover:scale-110 hover:fill-white mr-4' size={60} />
             </motion.div>            
@@ -135,7 +129,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.7, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <RiTailwindCssFill className='hover:scale-110 hover:fill-blue-600 mr-4' size={60} />
             </motion.div>
@@ -143,7 +136,6 @@ const Home = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.9, type: 'spring', stiffness: 150 }}
-            viewport={{ once: true }}
             >
         <SiShadcnui className='hover:scale-110 hover:fill-white mr-4' size={45} />
             </motion.div>
