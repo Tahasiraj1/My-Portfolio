@@ -4,11 +4,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 
 const Footer = () => {
-
-  const handleProfileViews = (Link: string): void => {
-    window.open(Link);
-  };
-
   return (
     <footer className='font-sans flex flex-col justify-center items-center h-20 bg-emerald-800'>
         <div className='flex flex-row pt-2 font-semibold'>

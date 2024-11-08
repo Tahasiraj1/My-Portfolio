@@ -47,7 +47,7 @@ const Home = () => {
         <section id='about'>
           <div className='bg-emerald-950 rounded-full text-center mx-6'>
             <motion.div
-            initial={{ x: 50 }}
+            initial={{ x: 40 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5 }}
             >
@@ -73,7 +73,7 @@ const Home = () => {
         <section id='skills'>
         <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
           <motion.div
-          initial={{ x: 30 }}
+          initial={{ x: 40 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           >
@@ -82,27 +82,69 @@ const Home = () => {
             </h2>
           </motion.div>
         </div>
-        <motion.div
-           initial={{ opacity: 0, y: 50 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 1 }}
-          >
           <div className='flex flex-wrap justify-center gap-4 mb-5 ml-5 items-center'>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, type: 'spring', stiffness: 150 }}
+            >
         <ImHtmlFive className='hover:scale-110 hover:fill-orange-700 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.7, type: 'spring', stiffness: 150 }}
+            >
         <SiCss3 className='hover:scale-110 hover:fill-blue-500 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.9, type: 'spring', stiffness: 150 }}
+            >
         <FaNodeJs className='hover:scale-110 hover:fill-lime-400 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.1, type: 'spring', stiffness: 150 }}
+            >
         <SiTypescript className='hover:scale-110 hover:fill-blue-700 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.3, type: 'spring', stiffness: 150 }}
+            >
         <FaReact className='hover:scale-110 hover:fill-sky-700 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5, type: 'spring', stiffness: 150 }}
+            >
         <RiNextjsFill className='hover:scale-110 hover:fill-white mr-4' size={60} />
+            </motion.div>            
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.7, type: 'spring', stiffness: 150 }}
+            >
         <RiTailwindCssFill className='hover:scale-110 hover:fill-blue-600 mr-4' size={60} />
+            </motion.div>
+            <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.9, type: 'spring', stiffness: 150 }}
+            >
         <SiShadcnui className='hover:scale-110 hover:fill-white mr-4' size={45} />
+            </motion.div>
           </div>
-          </motion.div>
         </section>
         {/* Projects */}
         <div className='bg-emerald-950 rounded-full text-center my-10 mx-6'>
           <motion.div
-          initial={{ x: 30 }}
+          initial={{ x: 40 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.5 }}
           >
@@ -117,7 +159,7 @@ const Home = () => {
           transition={{ duration: 0.5 }}
           >
         <section id='projects' className='flex justify-center'>
-          <div className='m-10 bg-stone-300 rounded-2xl shadow-2xl p-4 bg-opacity-50'>
+          <div className='m-1 bg-stone-300 rounded-2xl shadow-2xl p-4 bg-opacity-50'>
             <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-6'>
               {/* Project-1 */}
               <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
@@ -132,7 +174,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Search Movies & Browse popular flicks.
-              <Link href="https://movie-app-gules-alpha.vercel.app/">
+              <Link href="https://movie-app-gules-alpha.vercel.app/"
+                target="_blank"
+                prefetch={false}
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
@@ -148,7 +193,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Create a secure password with just few clicks.
-              <Link href="https://password-generator-project-9-next-js.vercel.app/">
+              <Link href="https://password-generator-project-9-next-js.vercel.app/"
+                target="_blank"
+                prefetch={false}  
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
@@ -164,7 +212,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Transforms time into a valuable ally.
-              <Link href="https://pomodoro-timer-project-14-next-js.vercel.app/">
+              <Link href="https://pomodoro-timer-project-14-next-js.vercel.app/"
+                target="_blank"
+                prefetch={false}  
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>
@@ -180,7 +231,10 @@ const Home = () => {
             className='h-96 rounded-2xl'
             />
             <h3 className='text-black text-lg flex flex-row mt-2 ml-8'>Easily calculate your BMI.
-              <Link href="https://bmi-calculator-project-11-next-js.vercel.app/">
+              <Link href="https://bmi-calculator-project-11-next-js.vercel.app/"
+                target="_blank"
+                prefetch={false}  
+              >
               <FaExternalLinkSquareAlt className='ml-3 mt-1 hover:text-gray-700' />
               </Link>
             </h3>

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const Projects = () => {
 
@@ -18,9 +19,15 @@ const Projects = () => {
   return (
     <div className='p-6'>
         <div className='bg-emerald-950 rounded-full h-10 m-4 my-8'>
+            <motion.div
+            initial={{ x: 50 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            >
             <h1 className='text-green-400 font-bold text-2xl text-center pt-1 animate-in slide-in-from-right-full transition-transform transform duration-300'>
                 <strong>Next.JS Projects</strong>
             </h1>
+            </motion.div>
         </div>
         <div className='grid md:grid-cols-3 grid-cols-1 gap-5 animate-in slide-in-from-bottom-full transition-transform transform duration-300'>
             {/* Project-1 */}

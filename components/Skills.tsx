@@ -19,18 +19,18 @@ const Skills = () => {
   };
 
   return (
-    <div className='flex flex-col justify-center p-8 md:px-40 animate-in slide-in-from-bottom-full transition-transform transform duration-500'>
+    <div className='flex flex-col items-center justify-center p-8 md:px-40 animate-in slide-in-from-bottom-full transition-transform transform duration-500'>
         {/* HTML */}
         <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <ImHtmlFive className='hover:scale-110 hover:fill-orange-700' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-orange-700'>
+      <ImHtmlFive className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>HTML</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
         HTML (HyperText Markup Language) is the standard language for creating web pages.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Advanced, with expertise in building structured and semantic websites.
@@ -42,15 +42,15 @@ const Skills = () => {
       </article>
       {/* CSS */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <SiCss3 className='hover:scale-110 hover:fill-blue-500' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-blue-500'>
+      <SiCss3 className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>CSS</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
       CSS (Cascading Style Sheets) is used to style and layout web pages.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Advanced, with hands-on experience in creating responsive and modern UI designs using frameworks like Tailwind CSS and animations.
@@ -62,15 +62,15 @@ const Skills = () => {
       </article>
       {/* TypeScript */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <SiTypescript className='hover:scale-110 hover:fill-blue-700' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-blue-700'>
+      <SiTypescript className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>TypeScript</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mr-2 mb-6'>
       TypeScript is a typed superset of JavaScript that enhances code quality by providing static types.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Intermediate, with in-depth knowledge of object-oriented programming principles and type-checking.
@@ -82,15 +82,15 @@ const Skills = () => {
       </article>
       {/* React */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <FaReact className='hover:scale-110 hover:fill-sky-700' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-sky-700'>
+      <FaReact className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>React</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
       React is a JavaScript library for building user interfaces using components.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Intermediate to Advanced, with expertise in building reusable components, managing state with useState, and handling side effects with useEffect.
@@ -102,15 +102,15 @@ const Skills = () => {
       </article>
       {/* Next.js */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <RiNextjsFill className='hover:scale-110 hover:fill-white' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-white'>
+      <RiNextjsFill className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>Next.js</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
       Next.js is a React framework that enables server-side rendering and static site generation for optimal performance.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Intermediate, proficient in building SEO-friendly web applications with API integration.
@@ -122,15 +122,15 @@ const Skills = () => {
       </article>
       {/* Tailwind CSS */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <RiTailwindCssFill className='hover:scale-110 hover:fill-blue-600' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-blue-600'>
+      <RiTailwindCssFill className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>Tailwind CSS</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
       Tailwind CSS is a utility-first CSS framework that allows for rapid UI development by providing low-level utility classes.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Intermediate, with a strong grasp of building responsive and modern designs quickly using Tailwind&rsquo;s utility classes.
@@ -142,15 +142,15 @@ const Skills = () => {
       </article>
       {/* Shadcn UI */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <SiShadcnui className='hover:scale-110 hover:fill-white' size={45} />
+      <div className='m-4 flex flex-col hover:text-white items-center'>
+      <SiShadcnui className='hover:scale-110' size={45} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>Shadcn UI</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
       Shadcn UI provides pre-built components with flexible styling options for building modern UIs using Tailwind CSS.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Intermediate, with a focus on integrating complex UI components such as cards, input, select, buttons, and dialogs into React applications.
@@ -162,15 +162,15 @@ const Skills = () => {
       </article>
       {/* Node.js */}
       <article className='bg-white bg-opacity-55 hover:scale-105 hover:shadow-xl transition-transform duration-300 border border:2 border-emerald-700 rounded-2xl mb-8'>
-      <div className='m-4 flex flex-col items-center'>
-      <FaNodeJs className='hover:scale-110 hover:fill-lime-400' size={60} />
+      <div className='m-4 flex flex-col items-center hover:text-lime-600'>
+      <FaNodeJs className='hover:scale-110' size={60} />
       <h1 className='text-2xl font-bold mb-4 ml-2'>
         <strong>Node.js</strong>
       </h1>
-      <h2 className='text-lg font-mono mb-6'>
+      </div>
+      <h2 className='text-lg font-mono ml-4 mb-6'>
       Node.js is a JavaScript runtime built on Chrome&rsquo;s V8 engine, allowing you to build fast, scalable server-side applications.
       </h2>
-      </div>
       <h3 className='text-lg ml-4 font-mono mb-4'>
         <strong>Proficiency:</strong><br/>
         Intermediate, skilled in using Node.js for managing user interactions in command-line applications and performing asynchronous operations.
