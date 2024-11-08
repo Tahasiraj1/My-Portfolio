@@ -11,7 +11,7 @@ const About = () => {
       };
 
   return (
-    <div className='flex flex-col justify-center p-8 md:px-40 h-screen'>
+    <div className='flex flex-col justify-center p-8 md:px-40'>
       <div className='animate-in slide-in-from-bottom-full transition-transform transform duration-500 bg-white bg-opacity-55 border-2 border-emerald-700 m-4 rounded-2xl'>
         <div className='flex flex-row justify-center'>
       <Image
