@@ -20,7 +20,11 @@ const Projects = () => {
     <div className='p-6'>
         <div className='bg-emerald-950 rounded-full h-10 m-4 my-8'>
             <motion.div
+<<<<<<< HEAD
             initial={{ x: 50 }}
+=======
+            initial={{ x: 40 }}
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5 }}
             >

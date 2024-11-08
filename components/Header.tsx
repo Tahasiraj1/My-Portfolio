@@ -11,7 +11,12 @@ const Header = () => {
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+<<<<<<< HEAD
         >
+=======
+        viewport={{ once: true }}
+        >  
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
         <Link href="/">
         <Image
         src="/profile1.jpeg"
@@ -27,6 +32,10 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.1 }}
+<<<<<<< HEAD
+=======
+        viewport={{ once: true }}
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
         >
         <Link href="/">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -38,6 +47,10 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.3 }}
+<<<<<<< HEAD
+=======
+        viewport={{ once: true }}
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
         >
             <Link href="/about">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -49,6 +62,10 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
+<<<<<<< HEAD
+=======
+        viewport={{ once: true }}
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
         >
             <Link href="/projects">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -60,6 +77,10 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.9 }}
+<<<<<<< HEAD
+=======
+        viewport={{ once: true }}
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
         >
             <Link href="/skills">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -71,6 +92,10 @@ const Header = () => {
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1.2 }}
+<<<<<<< HEAD
+=======
+        viewport={{ once: true }}
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
         >
             <Link href="/contact">
             <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
@@ -83,4 +108,8 @@ const Header = () => {
   )
 }
 
+<<<<<<< HEAD
 export default Header
+=======
+export default Header
+>>>>>>> 3553fbd6e84c08816ac6d291a5919452dffde3e8
