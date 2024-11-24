@@ -3,6 +3,14 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import {
+    Sheet,
+    SheetContent,
+    SheetTrigger,
+  } from "@/components/ui/sheet"
+import { Menu } from 'lucide-react';
+import { Button } from './ui/button';
+  
 
 const Header = () => {
   return (
@@ -23,17 +31,22 @@ const Header = () => {
         />
         </Link>
         </motion.div>
-        <ul className='flex gap-2 md:gap-3 justify-center items-center mr-2 font-thin lg:font-bold'>
+        <ul className='md:flex justify-center items-center mr-2 hidden'>
         <motion.div
         initial={{ y: -50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.1 }}
         viewport={{ once: true }}
         >
-        <Link href="/">
-            <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
-                Home
-            </li>
+            <Link href="/">
+                <Button
+                className='font-bold text-lg'
+                variant='linkHover2'
+                >
+                    <li className='text-green-400'>
+                        Home
+                    </li>
+                </Button>
             </Link>
         </motion.div>
         <motion.div
@@ -43,9 +56,14 @@ const Header = () => {
         viewport={{ once: true }}
         >
             <Link href="/about">
-            <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
-                About
-            </li>
+                <Button
+                className='font-bold text-lg'
+                variant='linkHover2'
+                >
+                    <li className='text-green-400'>
+                        About
+                    </li>
+                </Button>
             </Link>
         </motion.div>
         <motion.div
@@ -55,9 +73,14 @@ const Header = () => {
         viewport={{ once: true }}
         >
             <Link href="/projects">
-            <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
-                Projects
-            </li>
+                <Button
+                className='font-bold text-lg'
+                variant='linkHover2'
+                >
+                    <li className='text-green-400'>
+                        Projects
+                    </li>
+                </Button>
             </Link>
         </motion.div>
         <motion.div
@@ -67,9 +90,14 @@ const Header = () => {
         viewport={{ once: true }}
         >
             <Link href="/skills">
-            <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
-                Skills
-            </li>
+                <Button
+                className='font-bold text-lg'
+                variant='linkHover2'
+                >
+                    <li className='text-green-400'>
+                        Skills
+                    </li>
+                </Button>
             </Link>
         </motion.div>
         <motion.div
@@ -79,12 +107,76 @@ const Header = () => {
         viewport={{ once: true }}
         >
             <Link href="/contact">
-            <li className='text-green-400 lg:text-lg hover:-translate-y-1 hover:scale-110 active:scale-105 transition-transform transform duration:500'>
-                Contact
-            </li>
+                <Button
+                className='font-bold text-lg'
+                variant='linkHover2'
+                >
+                    <li className='text-green-400'>
+                        Contact
+                    </li>
+                </Button>
             </Link>
         </motion.div>
         </ul>
+        <Sheet>
+            <SheetTrigger className='md:hidden flex text-green-400'>
+                <Menu />
+            </SheetTrigger>
+            <SheetContent className='bg-emerald-800 border-emerald-400 text-green-200'>
+                <ul className='text-green-400 font-bold text-xl flex flex-col'>
+                    <Link href="/">
+                        <Button
+                        className='font-bold text-lg p-0 mb-2'
+                        variant='linkHover2'
+                        >
+                            <li className='text-green-400'>
+                                Home
+                            </li>
+                        </Button>
+                    </Link>
+                    <Link href="/about">
+                        <Button
+                        className='font-bold text-lg p-0 mb-2'
+                        variant='linkHover2'
+                        >
+                            <li className='text-green-400'>
+                                About
+                            </li>
+                        </Button>
+                    </Link>
+                    <Link href="/projects">
+                        <Button
+                        className='font-bold text-lg p-0 mb-2'
+                        variant='linkHover2'
+                        >
+                            <li className='text-green-400'>
+                                Projects
+                            </li>
+                        </Button>
+                    </Link>
+                    <Link href="/skills">
+                        <Button
+                        className='font-bold text-lg p-0 mb-2'
+                        variant='linkHover2'
+                        >
+                            <li className='text-green-400'>
+                                Skills
+                            </li>
+                        </Button>
+                    </Link>
+                    <Link href="/contact">
+                        <Button
+                        className='font-bold text-lg p-0'
+                        variant='linkHover2'
+                        >
+                            <li className='text-green-400'>
+                                Contact
+                            </li>
+                        </Button>
+                    </Link>
+                </ul>
+            </SheetContent>
+        </Sheet>
     </header>
   )
 }
