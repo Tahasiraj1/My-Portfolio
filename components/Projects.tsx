@@ -28,79 +28,71 @@ interface Project {
   githubUrl?: string;
 }
 
-// Sample project data - replace with your actual projects
 const projects = [
   {
     id: 1,
     title: "E-commerce Platform",
-    description:
-      "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
+    description:"A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
     longDescription:
       "Developed a comprehensive e-commerce solution that includes product catalog management, user authentication, shopping cart functionality, and secure payment processing. Implemented responsive design principles to ensure optimal viewing across all devices.",
     image: "/Avion-Thumbnail.PNG",
     tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    liveUrl: "https://hackathon-2-flax.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/Hackathon-2",
   },
   {
     id: 2,
-    title: "Task Management App",
-    description:
-      "A collaborative task management application with real-time updates and team workspaces.",
+    title: "Martial Arts Academy Website",
+    description:"A website for a martial arts academy with class schedules, instructor profiles, and membership information.",
     longDescription:
-      "Built a productivity tool that allows teams to organize tasks, set deadlines, and track progress in real-time. Features include drag-and-drop task organization, team collaboration spaces, and customizable notification settings.",
+      "Built a website for a martial arts academy that allows users to browse classes, view instructor profiles, and sign up for membership. The website features a responsive design with a clean and modern aesthetic.",
     image: "/MartialArts.PNG",
-    tags: ["Next.js", "Firebase", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["Next.js", "MongoDB", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://martial-arts-red.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/Martial-Arts",
   },
   {
     id: 3,
-    title: "Financial Dashboard",
-    description:
-      "An interactive dashboard for visualizing financial data with customizable charts and reports.",
+    title: "Dynamic Blog Website",
+    description:"A dynamic blog website with responsive design, commenting system.",
     longDescription:
-      "Created a comprehensive financial analytics dashboard that transforms complex data into intuitive visualizations. Users can customize views, generate reports, and set up automated alerts based on specific financial thresholds.",
+      "Created a dynamic blog website that allows users to read and comment on articles. Implemented a responsive design to ensure optimal viewing on all devices and integrated a commenting system to encourage user engagement.",
     image: "/Blog.PNG",
-    tags: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://dynamic-blog-website-lovat.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/Dynamic-Blog-Website",
   },
   {
     id: 4,
-    title: "Fitness Tracking Mobile App",
-    description:
-      "A cross-platform mobile application for tracking workouts, nutrition, and fitness goals.",
-    longDescription:
-      "Designed and developed a comprehensive fitness companion app that helps users track their exercise routines, monitor nutritional intake, and visualize progress toward fitness goals. Includes features like workout timers, progress photos, and social sharing capabilities.",
+    title: "Agentia World Landing Page",
+    description:"Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
+    longDescription:"Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
     image: "/Agentia.PNG",
-    tags: ["React Native", "Redux", "Firebase", "HealthKit"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://agentia-world-pi.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/Agentia-World",
   },
   {
     id: 5,
-    title: "AI Content Generator",
-    description:
-      "A tool that leverages machine learning to generate marketing copy and social media content.",
+    title: "Seller Center",
+    description:"An interactive dashboard for visualizing financial data with charts and reports.",
     longDescription:
-      "Engineered an AI-powered content creation tool that helps marketers generate compelling copy for various channels. The system analyzes brand voice, target audience, and campaign objectives to produce relevant, engaging content suggestions.",
+      "Designed and implemented a seller center dashboard for visualizing financial data, including sales reports, revenue trends, and inventory management. Integrated interactive charts and graphs to provide users with a comprehensive view of their business performance.",
     image: "/Avion-Admin.PNG",
-    tags: ["Python", "TensorFlow", "Flask", "React"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://avion-admin-dashboard.vercel.app/sign-in",
+    githubUrl: "https://github.com/Tahasiraj1/Avion-Admin-Dashboard",
   },
   {
     id: 6,
-    title: "Smart Home Control System",
-    description:
-      "An IoT solution for managing and automating connected devices in a smart home environment.",
+    title: "E-commerce Website",
+    description:"A simple e-commerce website with product listings and shopping cart functionality.",
     longDescription:
-      "Developed a centralized system for controlling and automating various smart home devices. The platform includes customizable routines, voice control integration, energy usage monitoring, and remote access capabilities.",
+      "Developed a simple e-commerce website that allows users to browse products, add them to their cart, and checkout securely. The website features a responsive design with a clean and modern aesthetic.",
     image: "/E-commerce.PNG",
-    tags: ["IoT", "React", "Node.js", "MQTT"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://e-commerce-website-mauve-mu.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/E-Commerce-website",
   },
 ];
 
@@ -147,7 +139,7 @@ export default function ProjectsShowcase() {
                       </Badge>
                     ))}
                     {project.tags.length > 3 && (
-                      <Badge variant="outline" className="text-xs">
+                      <Badge variant="outline" className="text-xs text-white">
                         +{project.tags.length - 3}
                       </Badge>
                     )}
