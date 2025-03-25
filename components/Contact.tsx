@@ -32,7 +32,7 @@ const Contact = () => {
         "service_kb0095m",
         "template_drjojyg",
         e.currentTarget,
-        "bTwY4Z7BY_xc4CM9q"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
