@@ -19,11 +19,11 @@ const About = () => {
             <h2 className="text-2xl font-bold mb-4">About Me</h2>
 
             <p className="mb-4">
-              👋 Hi, I'm <strong>Taha Siraj</strong>, a{" "}
+              👋 Hi, I&apos;m <strong>Taha Siraj</strong>, a{" "}
               <strong>full-stack developer</strong> passionate about building
               scalable and interactive applications. My journey began in{" "}
               <strong>February 2023</strong> with TypeScript, and since then,
-              I've built projects ranging from{" "}
+              I&apos;ve built projects ranging from{" "}
               <strong>e-commerce platforms</strong> to{" "}
               <strong>dynamic dashboards and interactive web apps</strong>.
             </p>

@@ -87,7 +87,7 @@ const Header = () => {
         </SheetTrigger>
         <SheetContent className="bg-black/70 bg-opacity-55 border-emerald-400">
           {sheetNavItems.map((item) => (
-            <ul className="font-bold text-xl flex flex-col">
+            <ul key={item.name} className="font-bold text-xl flex flex-col">
               <Link key={item.name} href={item.href}>
                 <Button
                   className="font-bold text-lg p-0 mb-2"
