@@ -67,13 +67,13 @@ const Contact = () => {
                 size={25}
                 className="text-neutral-400 hover:text-white mr-2"
               />
-              <Link href="https://www.linkedin.com/in/taha-siraj-521b512b7/">
+              <Link href="https://www.linkedin.com/in/taha-siraj-521b512b7/" target="_blank">
                 <FaLinkedin
                   size={25}
                   className="text-neutral-400 hover:text-white mr-2"
                 />
               </Link>
-              <Link href="https://github.com/Tahasiraj1">
+              <Link href="https://github.com/Tahasiraj1" target="_blank">
                 <FaGithub
                   size={25}
                   className="text-neutral-400 hover:text-white mr-2"
