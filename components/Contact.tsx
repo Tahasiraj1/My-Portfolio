@@ -9,6 +9,7 @@ import { HiOutlineGlobe } from "react-icons/hi";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Textarea } from "./ui/textarea";
 import { SlantedHeading } from "./ui/RoundedSlantHeading";
+import Link from "next/link";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -66,14 +67,18 @@ const Contact = () => {
                 size={25}
                 className="text-neutral-400 hover:text-white mr-2"
               />
-              <FaLinkedin
-                size={25}
-                className="text-neutral-400 hover:text-white mr-2"
-              />
-              <FaGithub
-                size={25}
-                className="text-neutral-400 hover:text-white mr-2"
-              />
+              <Link href="https://www.linkedin.com/in/taha-siraj-521b512b7/">
+                <FaLinkedin
+                  size={25}
+                  className="text-neutral-400 hover:text-white mr-2"
+                />
+              </Link>
+              <Link href="https://github.com/Tahasiraj1">
+                <FaGithub
+                  size={25}
+                  className="text-neutral-400 hover:text-white mr-2"
+                />
+              </Link>
             </span>
           </div>
           <div className="flex flex-col items-center justify-center w-full h-full space-y-4 mt-10 md:mt-0">
