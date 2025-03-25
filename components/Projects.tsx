@@ -1,504 +1,269 @@
 "use client";
-import React from 'react';
-import Image from 'next/image';
+
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
+import { SlantedHeading } from "./ui/RoundedSlantHeading";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
-import { FaArrowAltCircleUp } from "react-icons/fa";
-import { motion } from 'framer-motion';
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
-const Projects = () => {
-
-    const handleViewProjects = (Link: string): void => {
-        window.open(Link);
-    };
-
-    const handleScrollToTop = (): void => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      };
-
-  return (
-    <div className='p-6'>
-        <div className='bg-emerald-950 rounded-full h-10 m-4 my-8'>
-            <motion.div
-            initial={{ x: 40 }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            >
-            <h1 className='text-green-400 font-bold text-2xl text-center pt-1 animate-in slide-in-from-right-full transition-transform transform duration-300'>
-                <strong>Next.JS Projects</strong>
-            </h1>
-            </motion.div>
-        </div>
-        <div className='grid md:grid-cols-3 grid-cols-1 gap-5 animate-in slide-in-from-bottom-full transition-transform transform duration-300'>
-            {/* Project-1 */}
-            <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-                <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>MovieVerse</h2>
-                <Image
-                src="/MovieAppPicForPortfolio.PNG"
-                alt='MovieVerse'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='flex flex-row text-black text-lg mt-2'>
-                    Search Movies & Browse popular flicks.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://movie-app-gules-alpha.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button> 
-                </h3>
-                </div>
-            </article>
-            {/* Project-2 */}
-            <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-            <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Password Generator</h2>
-                <Image
-            src="/passwordgenerator.PNG"
-            alt='Password Generator'
-            width={400}
-            height={100}
-            className='h-96 rounded-2xl'
-            />
-            <h3 className='text-black text-lg flex flex-row mt-2'>
-                Create secure passwords with few clicks.
-            <Button
-            variant="ghost"
-            size="icon"
-            className='hover:bg-transparent active:scale-90 transition-transform'
-            onClick={() => handleViewProjects("https://password-generator-project-9-next-js.vercel.app/")}
-            >
-                <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-            </Button> 
-            </h3>
-            </div>
-            </article>
-            {/* Project-3 */}
-            <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-            <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-              <h2 className='text-lg font-bold text-center'>Pomodoro Timer</h2>
-            <Image
-            src="/PomodoroTimer.PNG"
-            alt='Pomodoro Timer'
-            width={400}
-            height={100}
-            className='h-96 rounded-2xl'
-            />
-            <h3 className='text-black text-lg flex flex-row mt-2'>
-                Transforms time into a valuable ally.
-            <Button
-            variant="ghost"
-            size="icon"
-            className='hover:bg-transparent active:scale-90 transition-transform'
-            onClick={() => handleViewProjects("https://pomodoro-timer-project-14-next-js.vercel.app/")}
-            >
-                <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-            </Button>
-            </h3>
-            </div>
-              </article>
-              {/* Project-4 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-              <h2 className='text-lg font-bold text-center'>BMI Calculator</h2>
-            <Image
-            src="/BMICalculator.PNG"
-            alt='BMI Calculator'
-            width={400}
-            height={100}
-            className='h-96 rounded-2xl'
-            />
-            <h3 className='text-black text-lg flex flex-row mt-2'>
-                Easily calculate your BMI.
-            <Button
-            variant="ghost"
-            size="icon"
-            className='hover:bg-transparent active:scale-90 transition-transform'
-            onClick={() => handleViewProjects("https://bmi-calculator-project-11-next-js.vercel.app/")}
-            >
-                <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-            </Button>
-            </h3>
-            </div>
-              </article>
-              {/* Project-5 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Meme Generator</h2>
-                <Image
-                src="/Meme-Generator.PNG"
-                alt='Meme Generator'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Create custom memes with our easy-to-use generator.
-                <Button
-                variant="ghost"
-                size="icon"
-                className='hover:bg-transparent active:scale-90 transition-transform'
-                onClick={() => handleViewProjects("https://meme-generator-project-17-next-js.vercel.app/")}
-                >
-                    <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-6 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Tip Calculator</h2>
-                <Image
-                src="/TipCalculator.png"
-                alt='Tip Calculator'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    This app makes it easy to calculate your tip and total bill amount.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://tip-calculator-project-9-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-7 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Currency Converter</h2>
-                <Image
-                src="/CurrencyConverter.PNG"
-                alt='Currency Converter'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Convert between various currencies seamlessly.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://currency-converter-project-18-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-8 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Movie Search App</h2>
-                <Image
-                src="/MovieSearch.PNG"
-                alt='Movie Search App'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Search your favourite movies & get detailed information.
-                <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://movie-search-project-16-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-9 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>HTML Previewer</h2>
-                <Image
-                src="/HTMLPreviewer.PNG"
-                alt='HTML Previewer'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    This tool allows users to input HTML code and instantly see the rendered result.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://html-previewer-project-13-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-10 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Expense Tracker</h2>
-                <Image
-                src="/Expense-Tracker.PNG"
-                alt='Expense Tracker'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    This application allows users to easily manage their expenses, providing a clear view of their financial habits.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://expense-tracker-project-15-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-11 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Calculator</h2>
-                <Image
-                src="/simpleCalculator.png"
-                alt='Calculator App'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    A simple Calculator app.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://simple-calculator-project-5-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-12 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Unit Converter</h2>
-                <Image
-                src="/UnitConverter.PNG"
-                alt='Unit Converter'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Switch between different units for length, weight, and volume, & Perform conversion.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://unit-converter-project-12-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-13 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Digital Clock</h2>
-                <Image
-                src="/digitalclock1.PNG"
-                alt='Digital Clock'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Digital Clock with 12/24-Hour Toggle.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://digital-clock-project-6-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-14 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-                <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Random Joke Generator</h2>
-                <Image
-                src="/randomjokegenerator.png"
-                alt='Random Joke Generator'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Fetches random jokes from an external API.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://random-joke-generator-project-7-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-15 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Birthday Celebration App</h2>
-                <Image
-                src="/BirthdayWishNext.js.png"
-                alt='Birthday Celebration App'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Celebrate your birthday with confetti bursts.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://birthday-wish-project-3-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-16 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Color Picker App</h2>
-                <Image
-                src="/ColorPicker.PNG"
-                alt='Color Picker App'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Pick colors & view their hex and RGB values.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://color-picker-project-8-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-17 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Number Guessing Game</h2>
-                <Image
-                src="/numberguessinggame2next.png"
-                alt='Number Guessing Game'
-                width={400}
-                height={100}
-                className='h-96 w-fit rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Guess a number that falls between 1 and 10.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://number-guessing-game-project-4-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-18 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Weather Widget</h2>
-                <Image
-                src="/Weather-widget-next.js-project-2.PNG"
-                alt='Weather Widget'
-                width={400}
-                height={100}
-                className='h-96 rounded-2xl w-fit'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    Search current weather for any city & get tailored messages based on weather conditions.
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://weather-widget-project-2-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-              {/* Project-19 */}
-              <article className='flex flex-col items-center hover:scale-105 transition-transform transform duration-300'>
-              <div className='p-4 bg-slate-200 rounded-3xl hover:shadow-xl bg-opacity-70 mb-5'>
-                <h2 className='text-lg font-bold text-center'>Countdown Timer</h2>
-                <Image
-                src="/CountdownTimer.Nextjs.PNG"
-                alt='Countdown Timer'
-                width={400}
-                height={100}
-                className='h-96 w-fit rounded-2xl'
-                />
-                <h3 className='text-black text-lg flex flex-row mt-2'>
-                    The timer features start, pause, resume, and reset functionalities
-                    <Button
-                    variant="ghost"
-                    size="icon"
-                    className='hover:bg-transparent active:scale-90 transition-transform'
-                    onClick={() => handleViewProjects("https://countdown-timer-project-1-next-js.vercel.app/")}
-                    >
-                        <FaExternalLinkSquareAlt size={20} className='mb-3 text-black bg-inherit hover:text-gray-700' />
-                    </Button>
-                </h3>
-                </div>
-              </article>
-             </div>
-            <div className="flex justify-end mb-5">
-            <Button
-            variant="ghost"
-            size="icon"
-            className='bg-emerald-500 hover:bg-emerald-600 rounded-full'
-            onClick={handleScrollToTop}
-            >
-                <FaArrowAltCircleUp size={40} className='active:scale-90 transition-transform transform duration-0' />
-            </Button>
-            </div>
-    </div>
-  );
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  longDescription: string;
+  image: string;
+  tags?: string[];
+  liveUrl?: string;
+  githubUrl?: string;
 }
 
-export default Projects
+// Sample project data - replace with your actual projects
+const projects = [
+  {
+    id: 1,
+    title: "E-commerce Platform",
+    description:
+      "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
+    longDescription:
+      "Developed a comprehensive e-commerce solution that includes product catalog management, user authentication, shopping cart functionality, and secure payment processing. Implemented responsive design principles to ensure optimal viewing across all devices.",
+    image: "/Avion-Thumbnail.PNG",
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/yourusername/project",
+  },
+  {
+    id: 2,
+    title: "Task Management App",
+    description:
+      "A collaborative task management application with real-time updates and team workspaces.",
+    longDescription:
+      "Built a productivity tool that allows teams to organize tasks, set deadlines, and track progress in real-time. Features include drag-and-drop task organization, team collaboration spaces, and customizable notification settings.",
+    image: "/MartialArts.PNG",
+    tags: ["Next.js", "Firebase", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/yourusername/project",
+  },
+  {
+    id: 3,
+    title: "Financial Dashboard",
+    description:
+      "An interactive dashboard for visualizing financial data with customizable charts and reports.",
+    longDescription:
+      "Created a comprehensive financial analytics dashboard that transforms complex data into intuitive visualizations. Users can customize views, generate reports, and set up automated alerts based on specific financial thresholds.",
+    image: "/Blog.PNG",
+    tags: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/yourusername/project",
+  },
+  {
+    id: 4,
+    title: "Fitness Tracking Mobile App",
+    description:
+      "A cross-platform mobile application for tracking workouts, nutrition, and fitness goals.",
+    longDescription:
+      "Designed and developed a comprehensive fitness companion app that helps users track their exercise routines, monitor nutritional intake, and visualize progress toward fitness goals. Includes features like workout timers, progress photos, and social sharing capabilities.",
+    image: "/Agentia.PNG",
+    tags: ["React Native", "Redux", "Firebase", "HealthKit"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/yourusername/project",
+  },
+  {
+    id: 5,
+    title: "AI Content Generator",
+    description:
+      "A tool that leverages machine learning to generate marketing copy and social media content.",
+    longDescription:
+      "Engineered an AI-powered content creation tool that helps marketers generate compelling copy for various channels. The system analyzes brand voice, target audience, and campaign objectives to produce relevant, engaging content suggestions.",
+    image: "/Avion-Admin.PNG",
+    tags: ["Python", "TensorFlow", "Flask", "React"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/yourusername/project",
+  },
+  {
+    id: 6,
+    title: "Smart Home Control System",
+    description:
+      "An IoT solution for managing and automating connected devices in a smart home environment.",
+    longDescription:
+      "Developed a centralized system for controlling and automating various smart home devices. The platform includes customizable routines, voice control integration, energy usage monitoring, and remote access capabilities.",
+    image: "/E-commerce.PNG",
+    tags: ["IoT", "React", "Node.js", "MQTT"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/yourusername/project",
+  },
+];
+
+export default function ProjectsShowcase() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  return (
+    <section className="py-2">
+      <SlantedHeading text="My Projects" />
+      <div className="container p-4 md:p-6">
+        {/* Projects grid */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 py-4">
+          {projects.map((project) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card className="overflow-hidden h-full flex flex-col bg-neutral-900 border-none">
+                <motion.div
+                  layoutId={`project-${project.id}`}
+                  className="relative aspect-video overflow-hidden"
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={1000}
+                    height={600}
+                    className="object-contain"
+                  />
+                </motion.div>
+                <CardContent className="flex-grow px-6">
+                  <h3 className="text-xl font-bold mb-2 text-white">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 text-white">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {project.tags.slice(0, 3).map((tag) => (
+                      <Badge key={tag} variant="secondary" className="text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                    {project.tags.length > 3 && (
+                      <Badge variant="outline" className="text-xs">
+                        +{project.tags.length - 3}
+                      </Badge>
+                    )}
+                  </div>
+                </CardContent>
+                <CardFooter className="px-6 pb-6 pt-0 flex justify-between">
+                  <Button
+                    className="bg-emerald-900 hover:bg-emerald-800"
+                    size="sm"
+                    onClick={() => setSelectedProject(project)}
+                  >
+                    View Details
+                  </Button>
+                  <div className="flex gap-2">
+                    {project.githubUrl && (
+                      <Button
+                        className="bg-emerald-900 hover:bg-emerald-800"
+                        size="icon"
+                        asChild
+                      >
+                        <Link
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="h-4 w-4" />
+                          <span className="sr-only">GitHub</span>
+                        </Link>
+                      </Button>
+                    )}
+                    {project.liveUrl && (
+                      <Button
+                        className="bg-emerald-900 hover:bg-emerald-800"
+                        size="icon"
+                        asChild
+                      >
+                        <Link
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          <span className="sr-only">Live Demo</span>
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
+                </CardFooter>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Project details dialog */}
+        <Dialog
+          open={!!selectedProject}
+          onOpenChange={(open) => !open && setSelectedProject(null)}
+        >
+          {selectedProject && (
+            <DialogContent className="max-w-3xl bg-neutral-900 border-neutral-700">
+              <DialogHeader>
+                <DialogTitle>{selectedProject.title}</DialogTitle>
+                <DialogDescription>
+                  <motion.div
+                    layoutId={`project-${selectedProject.id}`}
+                    className="relative aspect-video mt-4 mb-6 overflow-hidden rounded-lg"
+                  >
+                    <Image
+                      src={selectedProject.image || "/placeholder.svg"}
+                      alt={selectedProject.title}
+                      fill
+                      className="object-contain"
+                    />
+                  </motion.div>
+                  <div className="space-y-4">
+                    <p>{selectedProject.longDescription}</p>
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {selectedProject.tags?.map((tag) => (
+                        <Badge key={tag} variant="secondary">
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex gap-4 mt-6">
+                    {selectedProject.liveUrl && (
+                      <Button asChild>
+                        <Link
+                          href={selectedProject.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Live Demo
+                        </Link>
+                      </Button>
+                    )}
+                    {selectedProject.githubUrl && (
+                      <Button variant="outline" asChild>
+                        <Link
+                          href={selectedProject.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="h-4 w-4 mr-2" />
+                          View Code
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
+                </DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          )}
+        </Dialog>
+      </div>
+    </section>
+  );
+}

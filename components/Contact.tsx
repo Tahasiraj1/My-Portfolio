@@ -1,133 +1,123 @@
 "use client";
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { Linkedin, Github } from 'lucide-react';
-import { motion } from 'framer-motion';
+
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { MdOutlineEmail } from "react-icons/md";
+import { HiOutlineGlobe } from "react-icons/hi";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { Textarea } from "./ui/textarea";
+import { SlantedHeading } from "./ui/RoundedSlantHeading";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   // Handle form input changes
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.sendForm("service_kb0095m", "template_drjojyg", e.currentTarget, "bTwY4Z7BY_xc4CM9q")
-    .then((result) => {
-      console.log("Message sent successfully:", result.text);
-    }, (error) => {
-      console.log("Failed to send message:", error.text);
-    });
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleProfileViews = (Link: string): void => {
-    window.open(Link);
+    emailjs
+      .sendForm(
+        "service_kb0095m",
+        "template_drjojyg",
+        e.currentTarget,
+        "bTwY4Z7BY_xc4CM9q"
+      )
+      .then(
+        (result) => {
+          console.log("Message sent successfully:", result.text);
+        },
+        (error) => {
+          console.log("Failed to send message:", error.text);
+        }
+      );
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div className='pb-20 pt-16 px-12 lg:px-96 md:px-72'>
-        <div className='bg-emerald-950 rounded-full'>
-        <motion.div
-        initial={{ x: 30 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 0.5 }}
-        >
-        <h1 className='py-1 flex justify-center mb-8 font-bold text-3xl text-green-400'>
-            Let&rsquo;s Connect
-        </h1>
-        </motion.div>
+    <div>
+      <SlantedHeading text="Let&rsquo;s Connect" />
+      <div className="flex flex-col items-center justify-center w-full h-full py-12 px-10 space-y-4 container mx-auto">
+        <div className="flex flex-col md:flex-row items-start justify-center w-full h-full pt-10">
+          <div className="flex flex-col items-start justify-center w-full h-full space-y-4">
+            <h2 className="text-lg md:text-xl font-bold ">
+              Contact Information
+            </h2>
+            <p className="flex items-center justify-center text-sm md:text-lg text-gray-500">
+              <MdOutlineEmail className="text-emerald-500 mr-2" />
+              <span className="text-md">tahasiraj242@gmail.com</span>
+            </p>
+            <p className="flex items-center justify-center text-sm md:text-lg text-gray-500">
+              <HiOutlineGlobe className="text-emerald-500 mr-2" />
+              <span className="text-md">www.example.com</span>
+            </p>
+            <span className="flex items-center justify-center gap-2">
+              <FaTwitter
+                size={25}
+                className="text-neutral-400 hover:text-white mr-2"
+              />
+              <FaLinkedin
+                size={25}
+                className="text-neutral-400 hover:text-white mr-2"
+              />
+              <FaGithub
+                size={25}
+                className="text-neutral-400 hover:text-white mr-2"
+              />
+            </span>
+          </div>
+          <div className="flex flex-col items-center justify-center w-full h-full space-y-4 mt-10 md:mt-0">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col items-center justify-center w-full h-full space-y-4"
+            >
+              <Input
+                id="name"
+                name="name"
+                type="name"
+                value={formData.name}
+                onChange={handleChange} // Handle input change
+                required
+                placeholder="Full Name"
+                className="bg-neutral-950 border-neutral-800 py-6 px-4 focus:border-fuchsia-500/50"
+              />
+              <Input
+                id="email"
+                name="email"
+                type="email" // Correct email type
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleChange} // Handle input change
+                required
+                className="bg-neutral-950 border-neutral-800 py-6 px-4 focus:border-fuchsia-500/50"
+              />
+              <Textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message"
+                rows={3}
+                value={formData.message}
+                onChange={handleChange} // Handle input change
+                required
+                className="w-full bg-neutral-950 border-neutral-800 focus:border-fuchsia-500/50"
+              />
+              <Button type="submit" variant="shine" className="w-full">
+                Send
+              </Button>
+            </form>
+          </div>
         </div>
-      <form onSubmit={handleSubmit} className='h-96 bg-slate-300 bg-opacity-55 flex flex-col justify-center p-4 border-2 border-emerald-700 rounded-2xl'>
-        <Label htmlFor='name'>Name:</Label>
-        <Input
-          id='name'
-          name='name'
-          type='name'
-          placeholder='Enter your name'
-          value={formData.name}
-          onChange={handleChange} // Handle input change
-          required
-          className='items-center mt-2 bg-emerald-100'
-        />
-        
-        <Label className='mt-4' htmlFor='email'>Email:</Label>
-        <Input
-          id='email'
-          name='email'
-          type='email' // Correct email type
-          placeholder='Enter your email'
-          value={formData.email}
-          onChange={handleChange} // Handle input change
-          required
-          className='items-center mt-2 bg-emerald-100'
-        />
-
-        <Label className='mt-4' htmlFor='message'>Message:</Label>
-        <Textarea
-          id='message'
-          name='message'
-          placeholder='Enter your message'
-          rows={3}
-          value={formData.message}
-          onChange={handleChange} // Handle input change
-          required
-          className='items-center mt-2 bg-emerald-100'
-        />
-
-        <Button
-          type='submit' // Set button type to 'submit'
-          className='mt-4 w-36 mx-auto rounded-full bg-emerald-950 hover:bg-emerald-800 active:scale-95'
-        >
-          Submit
-        </Button>
-      </form>
-      <div className='bg-emerald-950 my-10 rounded-full'>
-      <motion.div
-        initial={{ x: 30 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 0.5 }}
-        >
-        <h2 className='py-1 animate-in slide-in-from-right-full transition-transform transform duration-300 flex justify-center mb-6 font-bold text-3xl text-green-400'>
-            Follow Me
-        </h2>
-        </motion.div>
       </div>
-      <div className=' flex justify-center gap-8'>
-        <Button
-          onClick={() => handleProfileViews("https://www.linkedin.com/in/taha-siraj-521b512b7/")}
-          className='bg-inherit hover:bg-transparent'
-          >
-      <Linkedin size={60} className='hover:text-blue-700 text-white active:scale-95 transition-transform transform duration:300' />
-        </Button>
-        <Button
-          onClick={() => handleProfileViews("https://github.com/Tahasiraj1")}
-          className='bg-inherit hover:bg-transparent'
-          >
-      <Github size={60}  className='hover:text-black text-white active:scale-95 transition-transform transform duration:300 ' />
-        </Button>
-      </div>
-      <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
-      >
-      <p className='mt-8 text-lg font-mono'>
-      Stay connected and join my journey!<br/><br/>
-      ✦ Connect with me on <strong>LinkedIn</strong> to stay updated on my professional growth, tech insights, and exciting projects I&rsquo;m working on.<br/><br/>
-      ✦ Follow me on <strong>GitHub</strong> where I share open-source contributions, coding challenges, and the latest projects I&rsquo;m developing.
-      </p>
-      </motion.div>
     </div>
   );
 };
