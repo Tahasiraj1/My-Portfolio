@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id='contact'>
       <SlantedHeading text="Let&rsquo;s Connect" />
       <div className="flex flex-col items-center justify-center w-full h-full py-12 px-10 space-y-4 container mx-auto">
         <div className="flex flex-col md:flex-row items-start justify-center w-full h-full pt-10">

@@ -100,7 +100,7 @@ export default function ProjectsShowcase() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section className="py-2">
+    <section id="projects" className="py-2">
       <SlantedHeading text="My Projects" />
       <div className="container p-4 md:p-6">
         {/* Projects grid */}
