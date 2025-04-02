@@ -36,7 +36,7 @@ const projects = [
     longDescription:
       "Developed a comprehensive e-commerce solution that includes product catalog management, user authentication, shopping cart functionality, and secure payment processing. Implemented responsive design principles to ensure optimal viewing across all devices.",
     image: "/Avion-Thumbnail.PNG",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    tags: ["React", "Node.js", "MongoDB", "Stripe", "Sanity"],
     liveUrl: "https://hackathon-2-flax.vercel.app/",
     githubUrl: "https://github.com/Tahasiraj1/Hackathon-2",
   },
@@ -79,7 +79,7 @@ const projects = [
     longDescription:
       "Designed and implemented a seller center dashboard for visualizing financial data, including sales reports, revenue trends, and inventory management. Integrated interactive charts and graphs to provide users with a comprehensive view of their business performance.",
     image: "/Avion-Admin.PNG",
-    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Sanity"],
     liveUrl: "https://avion-admin-dashboard.vercel.app/sign-in",
     githubUrl: "https://github.com/Tahasiraj1/Avion-Admin-Dashboard",
   },
