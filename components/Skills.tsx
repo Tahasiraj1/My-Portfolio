@@ -75,7 +75,7 @@ const skills = [
     proficiency: 80,
     category: "frontend",
     description: "Utility-first CSS framework for rapid UI development",
-    yearsExperience: 3,
+    yearsExperience: 1,
     color: "bg-blue-500",
   },
   {
@@ -95,7 +95,7 @@ const skills = [
     proficiency: 55,
     category: "language",
     description: "Data analysis, automation, and backend development",
-    yearsExperience: 3,
+    yearsExperience: 1,
     color: "bg-amber-500",
   },
   {
