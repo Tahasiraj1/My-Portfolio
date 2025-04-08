@@ -5,6 +5,9 @@ import { motion } from "motion/react";
 import { TextLoop } from "./ui/TextLoop";
 import ElegantShape from "@/components/ui/ElegantShape";
 import { AnimatedShinyText } from "./ui/AnimatedShinyText";
+import { Button } from "./ui/button";
+import Link from "next/link";
+import { Download } from "lucide-react";
 
 export default function Hero({
   title1 = "I'm Taha Siraj",
@@ -129,6 +132,14 @@ export default function Hero({
               and cutting-edge technology.
             </p>
           </motion.div>
+          <Link href="\cv.pdf" download={true}>
+            <Button
+              variant="gooeyLeft"
+              className="font-bold text-lg rounded-full bg-gradient-to-r from-emerald-800 via-emerald-600 to-emerald-800 p-6 items-center justify-center"
+            >
+              Download CV <Download className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
 
