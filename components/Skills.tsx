@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ImHtmlFive } from "react-icons/im";
-import { SiCss3, SiTypescript, SiStreamlit } from "react-icons/si";
+import { SiCss3, SiTypescript, SiStreamlit, SiSanity } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
@@ -77,6 +77,15 @@ const skills = [
     description: "Utility-first CSS framework for rapid UI development",
     yearsExperience: 3,
     color: "bg-blue-500",
+  },
+  {
+    name: "Sanity",
+    icon: <SiSanity className="fill-red-500" size={60} />,
+    proficiency: 80,
+    category: "backend",
+    description: "Modern CMS for building websites and apps",
+    yearsExperience: 1,
+    color: "bg-red-500",
   },
   {
     name: "Python",
