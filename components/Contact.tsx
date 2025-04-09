@@ -10,8 +10,11 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Textarea } from "./ui/textarea";
 import { SlantedHeading } from "./ui/RoundedSlantHeading";
 import Link from "next/link";
+import { useToast } from "@/hooks/use-toast"
+import { ToastAction } from "@/components/ui/toast"
 
 const Contact = () => {
+  const { toast } = useToast()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,13 +37,14 @@ const Contact = () => {
         e.currentTarget,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        (result) => {
-          console.log("Message sent successfully:", result.text);
-        },
+      .then(() => {toast({description: "Your message has been sent."})},
         (error) => {
-          console.log("Failed to send message:", error.text);
-        }
+        toast({
+          title: "Uh oh! Something went wrong.",
+          description: `${error.text}`, 
+          variant:"destructive",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        })}
       );
     setFormData({ name: "", email: "", message: "" });
   };
