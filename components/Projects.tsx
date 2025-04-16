@@ -126,12 +126,14 @@ export default function ProjectsShowcase() {
                   />
                 </motion.div>
                 <CardContent className="flex-grow px-6">
-                  <h3 className="text-xl font-bold mb-2 text-white">
+                  <motion.h3 
+                  layoutId={`project-${project.title}`}
+                  className="text-xl font-bold mb-2 text-white">
                     {project.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 text-white">
+                  </motion.h3>
+                  <motion.p className="text-muted-foreground mb-4 text-white">
                     {project.description}
-                  </p>
+                  </motion.p>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.tags.slice(0, 3).map((tag) => (
                       <Badge key={tag} variant="secondary" className="text-xs">
@@ -201,7 +203,9 @@ export default function ProjectsShowcase() {
           {selectedProject && (
             <DialogContent className="max-w-3xl bg-neutral-900 border-neutral-700">
               <DialogHeader>
-                <DialogTitle>{selectedProject.title}</DialogTitle>
+                <motion.div layoutId={`project-${selectedProject.title}`}>
+                  <DialogTitle>{selectedProject.title}</DialogTitle>
+                </motion.div>
                 <DialogDescription>
                   <motion.div
                     layoutId={`project-${selectedProject.id}`}
@@ -226,7 +230,9 @@ export default function ProjectsShowcase() {
                   </div>
                   <div className="flex gap-4 mt-6">
                     {selectedProject.liveUrl && (
-                      <Button asChild>
+                      <Button asChild
+                      className="bg-emerald-900 hover:bg-emerald-800"
+                      >
                         <Link
                           href={selectedProject.liveUrl}
                           target="_blank"
@@ -238,7 +244,10 @@ export default function ProjectsShowcase() {
                       </Button>
                     )}
                     {selectedProject.githubUrl && (
-                      <Button variant="outline" asChild>
+                      <Button 
+                      asChild
+                      className="bg-emerald-900 hover:bg-emerald-800"
+                      >
                         <Link
                           href={selectedProject.githubUrl}
                           target="_blank"
