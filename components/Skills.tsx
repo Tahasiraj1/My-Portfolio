@@ -8,6 +8,7 @@ import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { SlantedHeading } from "./ui/RoundedSlantHeading";
 import { Badge } from "@/components/ui/badge";
+import HoverEffect from "./ui/HoverEffect";
 
 // Enhanced skills data with proficiency and categories
 const skills = [
@@ -20,6 +21,7 @@ const skills = [
       "Semantic HTML5, accessibility best practices, and SEO optimization",
     yearsExperience: 1,
     color: "bg-orange-500",
+    gradient: "bg-gradient-to-r from-orange-500 to-orange-700",
   },
   {
     name: "CSS",
@@ -30,6 +32,7 @@ const skills = [
       "Modern CSS techniques including Grid, Flexbox, and animations",
     yearsExperience: 1,
     color: "bg-blue-500",
+    gradient: "bg-gradient-to-r from-blue-500 to-blue-700",
   },
   {
     name: "Node.js",
@@ -39,6 +42,7 @@ const skills = [
     description: "Server-side JavaScript, RESTful APIs, and Express.js",
     yearsExperience: 1,
     color: "bg-green-600",
+    gradient: "bg-gradient-to-r from-green-500 to-green-700",
   },
   {
     name: "TypeScript",
@@ -49,6 +53,7 @@ const skills = [
       "Type-safe JavaScript development with advanced TypeScript features",
     yearsExperience: 1,
     color: "bg-blue-500",
+    gradient: "bg-gradient-to-r from-blue-500 to-blue-700",
   },
   {
     name: "React",
@@ -59,6 +64,7 @@ const skills = [
       "Component architecture, hooks, context API, and state management",
     yearsExperience: 1,
     color: "bg-blue-600",
+    gradient: "bg-gradient-to-r from-blue-500 to-blue-700",
   },
   {
     name: "Next.js",
@@ -68,6 +74,7 @@ const skills = [
     description: "Server components, App Router, and full-stack development",
     yearsExperience: 1,
     color: "bg-gray-600",
+    gradient: "bg-gradient-to-r from-gray-500 to-gray-700",
   },
   {
     name: "Tailwind CSS",
@@ -77,6 +84,7 @@ const skills = [
     description: "Utility-first CSS framework for rapid UI development",
     yearsExperience: 1,
     color: "bg-blue-500",
+    gradient: "bg-gradient-to-r from-blue-500 to-blue-700",
   },
   {
     name: "Sanity",
@@ -86,6 +94,7 @@ const skills = [
     description: "Modern CMS for building websites and apps",
     yearsExperience: 1,
     color: "bg-red-500",
+    gradient: "bg-gradient-to-r from-red-500 to-red-700",
   },
   {
     name: "Python",
@@ -97,6 +106,7 @@ const skills = [
     description: "Data analysis, automation, and backend development",
     yearsExperience: 1,
     color: "bg-amber-500",
+    gradient: "bg-gradient-to-r from-amber-500 to-amber-700",
   },
   {
     name: "Streamlit",
@@ -106,6 +116,7 @@ const skills = [
     description: "Accessible and interactive data apps with Python",
     yearsExperience: 1,
     color: "bg-red-500",
+    gradient: "bg-gradient-to-r from-red-500 to-red-700",
   },
 ];
 
@@ -120,6 +131,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           <AnimatePresence mode="wait">
             {skills.map((skill, index) => (
+              <HoverEffect gradient={skill.gradient} key={skill.name} >
               <motion.div
                 key={skill.name}
                 initial={{ opacity: 0, y: 20 }}
@@ -190,6 +202,7 @@ const Skills = () => {
                   </motion.div>
                 </div>
               </motion.div>
+              </HoverEffect>
             ))}
           </AnimatePresence>
         </div>
