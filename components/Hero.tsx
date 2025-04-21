@@ -143,7 +143,7 @@ export default function Hero({
                 variant="gooeyLeft"
                 className="font-bold text-lg rounded-full bg-gradient-to-r from-emerald-800 via-emerald-600 to-emerald-800 p-6 items-center justify-center"
               >
-                Download CV <Download className="ml-2 h-5 w-5" />
+                Download Resume <Download className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </motion.div>
