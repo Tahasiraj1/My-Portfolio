@@ -98,7 +98,7 @@ const Contact = () => {
                 onChange={handleChange} // Handle input change
                 required
                 placeholder="Full Name"
-                className="bg-neutral-950 border-neutral-800 py-6 px-4 focus:border-fuchsia-500/50"
+                className="bg-neutral-950 border-neutral-800 py-6 px-4 focus:border-emerald-700"
               />
               <Input
                 id="email"
@@ -108,7 +108,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange} // Handle input change
                 required
-                className="bg-neutral-950 border-neutral-800 py-6 px-4 focus:border-fuchsia-500/50"
+                className="bg-neutral-950 border-neutral-800 py-6 px-4 focus:border-emerald-700"
               />
               <Textarea
                 id="message"
@@ -118,7 +118,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange} // Handle input change
                 required
-                className="w-full bg-neutral-950 border-neutral-800 focus:border-fuchsia-500/50"
+                className="w-full bg-neutral-950 border-neutral-800 focus:border-emerald-700"
               />
               <Button type="submit" variant="shine" className="w-full">
                 Send
