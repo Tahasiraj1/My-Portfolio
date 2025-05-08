@@ -16,13 +16,20 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
 
 interface Project {
   id: number;
   title: string;
   description: string;
   longDescription: string;
-  image: string;
+  images: string[];
   tags?: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -32,10 +39,11 @@ const projects = [
   {
     id: 1,
     title: "E-commerce Platform",
-    description:"A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
+    description:
+      "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
     longDescription:
       "Developed a comprehensive e-commerce solution that includes product catalog management, user authentication, shopping cart functionality, and secure payment processing. Implemented responsive design principles to ensure optimal viewing across all devices.",
-    image: "/Avion-Thumbnail.PNG",
+    images: ["/Avion-Thumbnail.PNG", "/Avion1.PNG", "/Avion2.PNG", "/Avion3.PNG", "/Avion4.PNG"],
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Sanity"],
     liveUrl: "https://hackathon-2-flax.vercel.app/",
     githubUrl: "https://github.com/Tahasiraj1/Hackathon-2",
@@ -43,56 +51,61 @@ const projects = [
   {
     id: 2,
     title: "Martial Arts Academy Website",
-    description:"A website for a martial arts academy with class schedules, instructor profiles, and membership information.",
+    description:
+      "A website for a martial arts academy with class schedules, instructor profiles, and membership information.",
     longDescription:
       "Built a website for a martial arts academy that allows users to browse classes, view instructor profiles, and sign up for membership. The website features a responsive design with a clean and modern aesthetic.",
-    image: "/MartialArts.PNG",
+    images: ["/MartialArts.PNG", "/MartialArts1.PNG", "/MartialArts2.PNG", "/MartialArts3.PNG", "/MartialArts4.PNG", "/MartialArts5.PNG"],
     tags: ["Next.js", "MongoDB", "Tailwind CSS", "TypeScript"],
     liveUrl: "https://martial-arts-red.vercel.app/",
     githubUrl: "https://github.com/Tahasiraj1/Martial-Arts",
   },
   {
     id: 3,
-    title: "Dynamic Blog Website",
-    description:"A dynamic blog website with responsive design, commenting system.",
+    title: "Animify Landing Page",
+    description: "Developed a simple Animation website landing page. The website features a responsive design with a clean and modern aesthetic.",
     longDescription:
-      "Created a dynamic blog website that allows users to read and comment on articles. Implemented a responsive design to ensure optimal viewing on all devices and integrated a commenting system to encourage user engagement.",
-    image: "/Blog.PNG",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://dynamic-blog-website-lovat.vercel.app/",
-    githubUrl: "https://github.com/Tahasiraj1/Dynamic-Blog-Website",
+      "A clean and modern landing page focused on motion design and animated elements. Built to showcase fluid transitions, interactive visuals, and engaging user experience using lightweight animation libraries.",
+    images: ["/Animify.PNG", "/Animify1.PNG", "/Animify2.PNG", "/Animify3.PNG", "/Animify4.PNG", "/Animify5.PNG",],
+    tags: ["Next.js", "Tailwind CSS", "TypeScript", "React"],
+    liveUrl: "https://omni-sol-figma.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/OmniSol-Figma",
   },
   {
     id: 4,
-    title: "Agentia World Landing Page",
-    description:"Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
-    longDescription:"Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
-    image: "/Agentia.PNG",
-    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://agentia-world-pi.vercel.app/",
-    githubUrl: "https://github.com/Tahasiraj1/Agentia-World",
-  },
-  {
-    id: 5,
     title: "Seller Center",
-    description:"An interactive dashboard for visualizing financial data with charts and reports.",
+    description:
+      "An interactive dashboard for visualizing financial data with charts and reports.",
     longDescription:
       "Designed and implemented a seller center dashboard for visualizing financial data, including sales reports, revenue trends, and inventory management. Integrated interactive charts and graphs to provide users with a comprehensive view of their business performance.",
-    image: "/Avion-Admin.PNG",
+    images: ["/Avion-Admin.PNG"],
     tags: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Sanity"],
     liveUrl: "https://avion-admin-dashboard.vercel.app/sign-in",
     githubUrl: "https://github.com/Tahasiraj1/Avion-Admin-Dashboard",
   },
   {
-    id: 6,
-    title: "E-commerce Website",
-    description:"A simple e-commerce website with product listings and shopping cart functionality.",
+    id: 5,
+    title: "Dynamic Blog Website",
+    description:
+      "A dynamic blog website with responsive design, commenting system.",
     longDescription:
-      "Developed a simple e-commerce website that allows users to browse products, add them to their cart, and checkout securely. The website features a responsive design with a clean and modern aesthetic.",
-    image: "/E-commerce.PNG",
+      "Created a dynamic blog website that allows users to read and comment on articles. Implemented a responsive design to ensure optimal viewing on all devices and integrated a commenting system to encourage user engagement.",
+    images: ["/Blog.PNG", "/Blog1.PNG"],
     tags: ["Next.js", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://e-commerce-website-mauve-mu.vercel.app/",
-    githubUrl: "https://github.com/Tahasiraj1/E-Commerce-website",
+    liveUrl: "https://dynamic-blog-website-lovat.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/Dynamic-Blog-Website",
+  },
+  {
+    id: 6,
+    title: "Agentia World Landing Page",
+    description:
+      "Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
+    longDescription:
+      "Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
+    images: ["/Agentia.PNG", "/Agentia1.PNG"],
+    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://agentia-world-pi.vercel.app/",
+    githubUrl: "https://github.com/Tahasiraj1/Agentia-World",
   },
 ];
 
@@ -113,83 +126,104 @@ export default function ProjectsShowcase() {
               transition={{ duration: 0.3 }}
             >
               <Card className="overflow-hidden h-full flex flex-col bg-neutral-900 border-none">
-                <motion.div
-                  layoutId={`project-${project.id}`}
-                  className="relative aspect-video overflow-hidden"
-                >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={1000}
-                    height={600}
-                    className="object-contain"
-                  />
-                </motion.div>
-                <CardContent className="flex-grow px-6">
-                  <motion.h3 
-                  layoutId={`project-${project.title}`}
-                  className="text-xl font-bold mb-2 text-white">
-                    {project.title}
-                  </motion.h3>
-                  <motion.p className="text-muted-foreground mb-4 text-white">
-                    {project.description}
-                  </motion.p>
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                    {project.tags.length > 3 && (
-                      <Badge variant="outline" className="text-xs text-white">
-                        +{project.tags.length - 3}
-                      </Badge>
-                    )}
-                  </div>
-                </CardContent>
-                <CardFooter className="px-6 pb-6 pt-0 flex justify-between">
-                  <Button
-                    className="bg-emerald-900 hover:bg-emerald-800"
-                    size="sm"
-                    onClick={() => setSelectedProject(project)}
+                <Carousel>
+                  <motion.div
+                    layoutId={`project-${project.id}`}
+                    className="relative aspect-video overflow-hidden"
                   >
-                    View Details
-                  </Button>
-                  <div className="flex gap-2">
-                    {project.githubUrl && (
-                      <Button
-                        className="bg-emerald-900 hover:bg-emerald-800"
-                        size="icon"
-                        asChild
+                    <CarouselContent>
+                      {project.images.map((image, index) => (
+                        <CarouselItem key={index}>
+                          <Image
+                            src={image}
+                            alt={project.title}
+                            width={1000}
+                            height={600}
+                            className="object-contain"
+                          />
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                  </motion.div>
+                  <CardContent className="flex-grow px-6">
+
+                    <div className="flex items-center justify-between mb-2">
+                      <motion.h3
+                        layoutId={`project-${project.title}`}
+                        className="text-xl font-bold text-white"
                       >
-                        <Link
-                          href={project.githubUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        {project.title}
+                      </motion.h3>
+                      <div className="flex items-center justify-center gap-2">
+                        <CarouselPrevious className="bg-emerald-900 hover:bg-emerald-800 hover:text-white text-white border border-emerald-600" />
+                        <CarouselNext className="bg-emerald-900 hover:bg-emerald-800 hover:text-white text-white border border-emerald-600" />
+                      </div>
+                    </div>
+
+                    <motion.p className="text-muted-foreground mb-4 text-white">
+                      {project.description}
+                    </motion.p>
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                      {project.tags.slice(0, 3).map((tag) => (
+                        <Badge
+                          key={tag}
+                          variant="secondary"
+                          className="text-xs"
                         >
-                          <Github className="h-4 w-4" />
-                          <span className="sr-only">GitHub</span>
-                        </Link>
-                      </Button>
-                    )}
-                    {project.liveUrl && (
-                      <Button
-                        className="bg-emerald-900 hover:bg-emerald-800"
-                        size="icon"
-                        asChild
-                      >
-                        <Link
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          {tag}
+                        </Badge>
+                      ))}
+                      {project.tags.length > 3 && (
+                        <Badge variant="outline" className="text-xs text-white">
+                          +{project.tags.length - 3}
+                        </Badge>
+                      )}
+                    </div>
+                  </CardContent>
+                  <CardFooter className="px-6 pb-6 pt-0 flex justify-between">
+                    <Button
+                      className="bg-emerald-900 hover:bg-emerald-800"
+                      size="sm"
+                      onClick={() => setSelectedProject(project)}
+                    >
+                      View Details
+                    </Button>
+                    <div className="flex gap-2">
+                      {project.githubUrl && (
+                        <Button
+                          className="bg-emerald-900 hover:bg-emerald-800"
+                          size="icon"
+                          asChild
                         >
-                          <ExternalLink className="h-4 w-4" />
-                          <span className="sr-only">Live Demo</span>
-                        </Link>
-                      </Button>
-                    )}
-                  </div>
-                </CardFooter>
+                          <Link
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="h-4 w-4" />
+                            <span className="sr-only">GitHub</span>
+                          </Link>
+                        </Button>
+                      )}
+                      {project.liveUrl && (
+                        <Button
+                          className="bg-emerald-900 hover:bg-emerald-800"
+                          size="icon"
+                          asChild
+                        >
+                          <Link
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                            <span className="sr-only">Live Demo</span>
+                          </Link>
+                        </Button>
+                      )}
+                    </div>
+                  </CardFooter>
+                </Carousel>
               </Card>
             </motion.div>
           ))}
@@ -212,7 +246,7 @@ export default function ProjectsShowcase() {
                     className="relative aspect-video mt-4 mb-6 overflow-hidden rounded-lg"
                   >
                     <Image
-                      src={selectedProject.image || "/placeholder.svg"}
+                      src={selectedProject.images[0] || "/placeholder.svg"}
                       alt={selectedProject.title}
                       fill
                       className="object-contain"
@@ -230,8 +264,9 @@ export default function ProjectsShowcase() {
                   </div>
                   <div className="flex gap-4 mt-6">
                     {selectedProject.liveUrl && (
-                      <Button asChild
-                      className="bg-emerald-900 hover:bg-emerald-800"
+                      <Button
+                        asChild
+                        className="bg-emerald-900 hover:bg-emerald-800"
                       >
                         <Link
                           href={selectedProject.liveUrl}
@@ -244,9 +279,9 @@ export default function ProjectsShowcase() {
                       </Button>
                     )}
                     {selectedProject.githubUrl && (
-                      <Button 
-                      asChild
-                      className="bg-emerald-900 hover:bg-emerald-800"
+                      <Button
+                        asChild
+                        className="bg-emerald-900 hover:bg-emerald-800"
                       >
                         <Link
                           href={selectedProject.githubUrl}
