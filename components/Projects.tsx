@@ -23,6 +23,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
+import HeroCarousel from "./Carousel";
 
 interface Project {
   id: number;
@@ -245,11 +246,11 @@ export default function ProjectsShowcase() {
                     layoutId={`project-${selectedProject.id}`}
                     className="relative aspect-video mt-4 mb-6 overflow-hidden rounded-lg"
                   >
-                    <Image
-                      src={selectedProject.images[0] || "/placeholder.svg"}
-                      alt={selectedProject.title}
-                      fill
-                      className="object-contain"
+                    <HeroCarousel
+                      images={selectedProject.images.map(image => ({
+                        src: image,
+                        alt: selectedProject.title // or any appropriate alt text
+                      }))}
                     />
                   </motion.div>
                   <div className="space-y-4">

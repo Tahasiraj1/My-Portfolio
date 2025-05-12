@@ -4,17 +4,17 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { MdOutlineEmail } from "react-icons/md";
-import { HiOutlineGlobe } from "react-icons/hi";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaPhoneAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Textarea } from "./ui/textarea";
 import { SlantedHeading } from "./ui/RoundedSlantHeading";
 import Link from "next/link";
-import { useToast } from "@/hooks/use-toast"
-import { ToastAction } from "@/components/ui/toast"
+import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 const Contact = () => {
-  const { toast } = useToast()
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,20 +37,24 @@ const Contact = () => {
         e.currentTarget,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
-      .then(() => {toast({description: "Your message has been sent."})},
+      .then(
+        () => {
+          toast({ description: "Your message has been sent." });
+        },
         (error) => {
-        toast({
-          title: "Uh oh! Something went wrong.",
-          description: `${error.text}`, 
-          variant:"destructive",
-          action: <ToastAction altText="Try again">Try again</ToastAction>,
-        })}
+          toast({
+            title: "Uh oh! Something went wrong.",
+            description: `${error.text}`,
+            variant: "destructive",
+            action: <ToastAction altText="Try again">Try again</ToastAction>,
+          });
+        }
       );
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div id='contact'>
+    <div id="contact">
       <SlantedHeading text="Let&rsquo;s Connect" />
       <div className="flex flex-col items-center justify-center w-full h-full py-12 px-10 space-y-4 container mx-auto">
         <div className="flex flex-col md:flex-row items-start justify-center w-full h-full pt-10">
@@ -59,19 +63,24 @@ const Contact = () => {
               Contact Information
             </h2>
             <p className="flex items-center justify-center text-sm md:text-lg text-gray-500">
-              <MdOutlineEmail className="text-emerald-500 mr-2" />
+              <MdEmail className="text-emerald-500 mr-2" />
               <span className="text-md">tahasiraj242@gmail.com</span>
             </p>
             <p className="flex items-center justify-center text-sm md:text-lg text-gray-500">
-              <HiOutlineGlobe className="text-emerald-500 mr-2" />
-              <span className="text-md">www.example.com</span>
+              <FaPhoneAlt className="text-emerald-500 mr-2" />
+              <span className="text-md">+92 3311245238</span>
             </p>
             <span className="flex items-center justify-center gap-2">
-              <FaTwitter
-                size={25}
-                className="text-neutral-400 hover:text-white mr-2"
-              />
-              <Link href="https://www.linkedin.com/in/taha-siraj-521b512b7/" target="_blank">
+              <Link href="https://x.com/Tahasiraj111" target="_blank">
+                <FaXTwitter
+                  size={25}
+                  className="text-neutral-400 hover:text-white mr-2"
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/taha-siraj-521b512b7/"
+                target="_blank"
+              >
                 <FaLinkedin
                   size={25}
                   className="text-neutral-400 hover:text-white mr-2"
