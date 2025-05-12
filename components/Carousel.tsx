@@ -15,7 +15,7 @@ interface HeroCarouselProps {
   showControls?: boolean;
 }
 
-export default function HeroCarousel({
+export default function ProjectCarousel({
   images,
   autoPlayInterval = 5000,
   showControls = true,
