@@ -109,7 +109,7 @@ export default function Hero({
           >
             <h1 className="font-bold mb-6 md:mb-8 tracking-tight">
               <span className="text-4xl sm:text-6xl md:text-8xl bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">
-                I'm Taha Siraj
+                {title1}
               </span>
               <br />
               <span className="text-4xl md:text-6xl ">
