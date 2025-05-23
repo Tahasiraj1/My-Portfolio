@@ -108,14 +108,14 @@ export default function Hero({
             animate="visible"
           >
             <h1 className="font-bold mb-6 md:mb-8 tracking-tight">
-              <span className="text-4xl sm:text-6xl md:text-8xl bg-clip-text text-white bg-linear-to-b from-white to-white/80">
-                {title1}
+              <span className="text-4xl sm:text-6xl md:text-8xl bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">
+                I'm Taha Siraj
               </span>
               <br />
-              <span className="text-4xl md:text-6xl bg-clip-text text-white bg-linear-to-r from-indigo-300 via-white/90 to-rose-300 ">
+              <span className="text-4xl md:text-6xl ">
                 <TextLoop>
-                  <span>A Developer</span>
-                  <span>AI Enthusiast</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">A Developer</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">AI Enthusiast</span>
                 </TextLoop>
               </span>
             </h1>
