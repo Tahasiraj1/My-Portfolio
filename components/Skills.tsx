@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SlantedHeading } from "./ui/RoundedSlantHeading";
 import { Badge } from "@/components/ui/badge";
 import HoverEffect from "./ui/HoverEffect";
+import { AiOutlineOpenAI } from "react-icons/ai";
 
 // Enhanced skills data with proficiency and categories
 const skills = [
@@ -104,7 +105,7 @@ const skills = [
     proficiency: 55,
     category: "language",
     description: "Data analysis, automation, and backend development",
-    yearsExperience: 1,
+    yearsExperience: '0-1',
     color: "bg-amber-500",
     gradient: "bg-gradient-to-r from-amber-500 to-amber-700",
   },
@@ -114,10 +115,20 @@ const skills = [
     proficiency: 50,
     category: "frontend",
     description: "Accessible and interactive data apps with Python",
-    yearsExperience: 1,
+    yearsExperience: '0-1',
     color: "bg-red-500",
     gradient: "bg-gradient-to-r from-red-500 to-red-700",
   },
+  {
+    name: 'OpenAI Agents SDK',
+    icon: <AiOutlineOpenAI className="fill-white" size={45} />,
+    proficiency: 30,
+    category: 'Agents Development',
+    description: 'Develop AI Agents using Python',
+    yearsExperience: '0-1',
+    color: 'bg-gray-600',
+    gradient: 'bg-gradient-to-r from-gray-500 to-gray-700',
+  }
 ];
 
 const Skills = () => {
