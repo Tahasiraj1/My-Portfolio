@@ -100,7 +100,7 @@ const sharedTransition = {
 export function MenuBar() {
   return (
     <motion.nav
-      className="p-2 bg-transparent backdrop-blur-lg border border-slate-700/40 shadow-lg relative overflow-hidden rounded-full"
+      className="hidden md:block p-2 bg-transparent backdrop-blur-lg border border-slate-700/40 shadow-lg relative overflow-hidden rounded-full"
       initial="initial"
       whileHover="hover"
     >
