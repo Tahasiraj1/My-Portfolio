@@ -93,7 +93,7 @@ export default function Hero({
             animate="visible"
             className="inline-flex items-center text-center group gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
           >
-            <span className="transition-transform duration-400 group-hover:animate-wiggle">
+            <span className="transition-transform duration-400 animate-wiggle">
               👋
             </span>
             <span className="tracking-wide ">
