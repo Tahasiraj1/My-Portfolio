@@ -43,7 +43,7 @@ const projects = [
     description:
       "An AI-powered email agent that analyzes incoming emails and sends personalized responses.",
     longDescription:
-      "The Email Agent is an AI-powered assistant that integrates with your Gmail inbox to intelligently read, analyze, and act on incoming emails. Built using the OpenAI Agents SDK, FastAPI, and Google APIs, this agent can: • Categorizes emails: Urgent, Draft, Spam • Auto-summarizes content • Auto-replies or drafts based on urgency • Compose/draft emails via prompt + attachments • Runs every 30 sec, fully automated",
+      "The Email Agent is an AI-powered assistant that integrates with your Gmail inbox to intelligently read, analyze, and act on incoming emails. This agent can:\n • Categorizes emails: Urgent, Draft, Spam\n • Auto-summarizes content\n • Auto-replies or drafts based on urgency\n • Compose/draft emails via prompt + attachments\n • Runs every 30 sec, fully automated",
     images: ["/Automate Your.png"],
     tags: ["Python", "OpenAI Agents SDK", "Gmail API", "Chainlit"],
     githubUrl: "https://github.com/Tahasiraj1/Email-Agent",
@@ -248,12 +248,12 @@ export default function ProjectsShowcase() {
                     <ProjetCarousel
                       images={selectedProject.images.map(image => ({
                         src: image,
-                        alt: selectedProject.title // or any appropriate alt text
+                        alt: selectedProject.title,
                       }))}
                     />
                   </motion.div>
                   <div className="space-y-4">
-                    <p>{selectedProject.longDescription}</p>
+                    <pre className="whitespace-pre-wrap">{selectedProject.longDescription}</pre>
                     <div className="flex flex-wrap gap-2 mt-4">
                       {selectedProject.tags?.map((tag) => (
                         <Badge key={tag} variant="secondary">
