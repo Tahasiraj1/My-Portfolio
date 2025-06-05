@@ -39,6 +39,17 @@ interface Project {
 const projects = [
   {
     id: 1,
+    title: "AI Powered Email Agent",
+    description:
+      "An AI-powered email agent that analyzes incoming emails and sends personalized responses.",
+    longDescription:
+      "The Email Agent is an AI-powered assistant that integrates with your Gmail inbox to intelligently read, analyze, and act on incoming emails. Built using the OpenAI Agents SDK, FastAPI, and Google APIs, this agent can: • Categorizes emails: Urgent, Draft, Spam • Auto-summarizes content • Auto-replies or drafts based on urgency • Compose/draft emails via prompt + attachments • Runs every 30 sec, fully automated",
+    images: ["/Automate Your.png"],
+    tags: ["Python", "OpenAI Agents SDK", "Gmail API", "Chainlit"],
+    githubUrl: "https://github.com/Tahasiraj1/Email-Agent",
+  },
+  {
+    id: 2,
     title: "E-commerce Platform",
     description:
       "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
@@ -50,7 +61,7 @@ const projects = [
     githubUrl: "https://github.com/Tahasiraj1/Hackathon-2",
   },
   {
-    id: 2,
+    id: 3,
     title: "Martial Arts Academy Website",
     description:
       "A website for a martial arts academy with class schedules, instructor profiles, and membership information.",
@@ -62,7 +73,7 @@ const projects = [
     githubUrl: "https://github.com/Tahasiraj1/Martial-Arts",
   },
   {
-    id: 3,
+    id: 4,
     title: "Animify Landing Page",
     description: "Developed a simple Animation website landing page. The website features a responsive design with a clean and modern aesthetic.",
     longDescription:
@@ -73,7 +84,7 @@ const projects = [
     githubUrl: "https://github.com/Tahasiraj1/OmniSol-Figma",
   },
   {
-    id: 4,
+    id: 5,
     title: "Seller Center",
     description:
       "An interactive dashboard for visualizing financial data with charts and reports.",
@@ -85,7 +96,7 @@ const projects = [
     githubUrl: "https://github.com/Tahasiraj1/Avion-Admin-Dashboard",
   },
   {
-    id: 5,
+    id: 6,
     title: "Dynamic Blog Website",
     description:
       "A dynamic blog website with responsive design, commenting system.",
@@ -95,19 +106,7 @@ const projects = [
     tags: ["Next.js", "Tailwind CSS", "TypeScript"],
     liveUrl: "https://dynamic-blog-website-lovat.vercel.app/",
     githubUrl: "https://github.com/Tahasiraj1/Dynamic-Blog-Website",
-  },
-  {
-    id: 6,
-    title: "Agentia World Landing Page",
-    description:
-      "Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
-    longDescription:
-      "Developed a landing page for the Agentia World website, showcasing its features and benefits to users.",
-    images: ["/Agentia.PNG", "/Agentia1.PNG"],
-    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://agentia-world-pi.vercel.app/",
-    githubUrl: "https://github.com/Tahasiraj1/Agentia-World",
-  },
+  }
 ];
 
 export default function ProjectsShowcase() {
@@ -148,7 +147,7 @@ export default function ProjectsShowcase() {
                   </motion.div>
                   <CardContent className="flex-grow px-6">
 
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between my-2">
                       <motion.h3
                         layoutId={`project-${project.title}`}
                         className="text-xl font-bold text-white"
