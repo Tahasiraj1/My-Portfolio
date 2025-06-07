@@ -8,7 +8,7 @@ export const Draggable = ({ id, children }: {
   children: (props: {
     setNodeRef: (node: HTMLElement | null) => void;
     style: React.CSSProperties;
-    dragHandleProps: any;
+    dragHandleProps: object;
     isDragging: boolean;
     isOver: boolean;
   }) => React.ReactNode;
