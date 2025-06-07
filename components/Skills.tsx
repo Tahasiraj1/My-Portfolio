@@ -126,7 +126,7 @@ const initialSkills = [
   {
     name: "Streamlit",
     id: "10",
-    icon: <SiStreamlit className="fill-red-500 dark:fill-red-500" size={45} />,
+    icon: <SiStreamlit className="fill-red-500 dark:fill-red-500" size={60} />,
     dndIcon: 'text-red-300',
     proficiency: 50,
     yearsExperience: "0-1",
@@ -137,7 +137,7 @@ const initialSkills = [
   {
     name: "OpenAI Agents SDK",
     id: "11",
-    icon: <AiOutlineOpenAI className="fill-white" size={45} />,
+    icon: <AiOutlineOpenAI className="fill-white" size={60} />,
     dndIcon: 'text-gray-300',
     proficiency: 30,
     yearsExperience: "0-1",
