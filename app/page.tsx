@@ -2,8 +2,8 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import React from "react";
 import Contact from "@/components/Contact";
-import ProjectsShowcase from "@/components/Projects";
 import Hero from "@/components/Hero";
+import { MorphingDialogBasicTwo } from "@/components/newprojects";
 
 const page = () => {
   return (
@@ -11,7 +11,7 @@ const page = () => {
       <Hero />
       <Skills />
       <About />
-      <ProjectsShowcase />
+      <MorphingDialogBasicTwo />
       <Contact />
     </div>
   );

@@ -7,6 +7,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 interface CarouselImage {
   src: string;
   alt: string;
+  width?: number;
+  height?: number;
+  className?: string;
 }
 
 interface HeroCarouselProps {
@@ -68,10 +71,10 @@ export default function ProjectCarousel({
             <Image
               src={image.src || "/placeholder.svg"}
               alt={image.alt}
-              fill
               priority={index === 0}
-              sizes="100vw"
-              style={{ objectFit: "cover" }}
+              width={image.width}
+              height={image.height}
+              className={image.className}
             />
           </div>
         ))}

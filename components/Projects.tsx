@@ -249,6 +249,9 @@ export default function ProjectsShowcase() {
                       images={selectedProject.images.map(image => ({
                         src: image,
                         alt: selectedProject.title,
+                        width: 1000,
+                        height: 400,
+                        className: "h-full w-full rounded-xl",
                       }))}
                     />
                   </motion.div>
