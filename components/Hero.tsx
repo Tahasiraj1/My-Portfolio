@@ -112,10 +112,10 @@ export default function Hero({
                 {title1}
               </span>
               <br />
-              <span className="text-4xl md:text-6xl ">
+              <span className="text-4xl md:text-5xl ">
                 <TextLoop>
-                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">A Developer</span>
-                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">AI Enthusiast</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">Full Stack Developer</span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">Agentic AI Developer</span>
                 </TextLoop>
               </span>
             </h1>
