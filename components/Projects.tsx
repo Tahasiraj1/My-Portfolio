@@ -66,7 +66,7 @@ const projects = [
       "/MartialArts5.PNG",
     ],
     tags: ["Next.js", "MongoDB", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://martial-arts-red.vercel.app/",
+    liveUrl: "https://martial-arts-bv38exrpy-tahasiraj1s-projects.vercel.app/",
     githubUrl: "https://github.com/Tahasiraj1/Martial-Arts",
   },
   {
