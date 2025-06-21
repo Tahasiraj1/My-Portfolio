@@ -19,7 +19,7 @@ import {
   TouchSensor,
   KeyboardSensor,
 } from "@dnd-kit/core";
-import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
+import { arrayMove } from "@dnd-kit/sortable";
 import { Draggable } from "./dnd";
 import { GripVertical } from "lucide-react";
 
