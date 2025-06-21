@@ -138,7 +138,7 @@ export default function Hero({
             initial="hidden"
             animate="visible"
           >
-            <Link href="\cv.pdf" download={true}>
+            <Link href="\Resume.pdf" download={true}>
               <Button
                 variant="gooeyLeft"
                 className="font-bold text-lg rounded-full bg-gradient-to-r from-emerald-800 via-emerald-600 to-emerald-800 p-6 items-center justify-center"
