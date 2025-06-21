@@ -100,7 +100,7 @@ const sharedTransition = {
 export function MenuBar() {
   return (
     <motion.nav
-      className="hidden md:block p-2 bg-transparent backdrop-blur-lg border border-slate-700/40 shadow-lg relative overflow-hidden rounded-full"
+      className="flex p-2 bg-transparent backdrop-blur-lg border border-slate-700/40 shadow-lg relative overflow-hidden rounded-full"
       initial="initial"
       whileHover="hover"
     >
@@ -136,7 +136,7 @@ export function MenuBar() {
                 <span className={`transition-colors duration-300 group-hover:${item.iconColor} text-white`}>
                   {item.icon}
                 </span>
-                <span>{item.label}</span>
+                <span className="hidden sm:block">{item.label}</span>
               </motion.a>
               <motion.a
                 href={item.href}
@@ -148,7 +148,7 @@ export function MenuBar() {
                 <span className={`transition-colors duration-300 group-hover:${item.iconColor} text-white`}>
                   {item.icon}
                 </span>
-                <span>{item.label}</span>
+                <span className="hidden sm:block">{item.label}</span>
               </motion.a>
             </motion.div>
           </motion.li>

@@ -155,12 +155,7 @@ const Skills = () => {
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor),
-    useSensor(TouchSensor, {
-      activationConstraint: {
-        delay: 250,
-        tolerance: 5,
-      },
-    })
+    useSensor(TouchSensor)
   );
 
   return (
@@ -216,7 +211,7 @@ const Skills = () => {
                           />
                           {/* Drag Handle Button */}
                           <div
-                            className="absolute top-2 right-2 cursor-grab"
+                            className="absolute top-2 right-2 cursor-grab touch-none"
                             {...dragHandleProps}
                           >
                             <GripVertical className={`${skill.dndIcon}`} />

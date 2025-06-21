@@ -109,7 +109,7 @@ export function Projects() {
   return (
     <>
       <SlantedHeading text="My Projects" />
-      <div className="flex items-start justify-center px-4 md:px-10 py-10 w-full">
+      <div id="projects" className="flex items-start justify-center px-4 md:px-10 py-10 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
