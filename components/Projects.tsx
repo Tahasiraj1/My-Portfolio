@@ -145,7 +145,7 @@ function ProjectCard({ project }: { project: Project }) {
 
       <MorphingDialogContainer className="relative h-auto max-w-[95vw] lg:max-w-6xl">
         <MorphingDialogContent className="h-auto w-full overflow-hidden bg-black/90 backdrop-blur-lg border border-slate-700/40 relative mx-4 md:mx-10 rounded-xl">
-          <ScrollArea className="h-full max-h-[90vh] w-full" type="scroll">
+          <ScrollArea className="h-full w-full" type="scroll">
             <div className="relative p-4 md:p-6">
               <div className="flex flex-col lg:flex-row gap-6 h-full w-full">
                 {/* Carousel Section */}

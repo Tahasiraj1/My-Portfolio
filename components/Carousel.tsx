@@ -47,7 +47,7 @@ export default function ProjectCarousel({ images, autoPlayInterval = 5000, showC
 
   return (
     <div
-      className="relative w-full h-[300px] md:h-full lg:h-full overflow-hidden rounded-xl bg-transparent"
+      className="relative w-full h-[300px] md:h-[400px] lg:h-full overflow-hidden rounded-xl bg-transparent"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
