@@ -13,11 +13,11 @@ import { AiOutlineOpenAI } from "react-icons/ai";
 import {
   DndContext,
   closestCenter,
-  KeyboardSensor,
   PointerSensor,
   useSensor,
   useSensors,
   TouchSensor,
+  KeyboardSensor,
 } from "@dnd-kit/core";
 import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import { Draggable } from "./dnd";
@@ -154,6 +154,7 @@ const Skills = () => {
 
   const sensors = useSensors(
     useSensor(PointerSensor),
+    useSensor(KeyboardSensor),
     useSensor(TouchSensor)
   );
 
