@@ -25,7 +25,7 @@ export const SlantedHeading: React.FC<SlantedHeadingProps> = ({
 `}
     >
       <div className="flex flex-col">
-        <h1 className="text-4xl font-semibold uppercase">{text}</h1>
+        <h1 className="text-2xl sm:text-4xl font-semibold uppercase">{text}</h1>
         {paragraph && (
           <p className="text-lg font-semibold uppercase">{paragraph}</p>
         )}
