@@ -129,8 +129,11 @@ const Contact = () => {
                 required
                 className="w-full bg-neutral-950 border-neutral-800 focus:border-emerald-700"
               />
-              <Button type="submit" variant="shine" className="w-full">
-                Send
+              <Button 
+                type="submit" 
+                className="w-full relative overflow-hidden hover:bg-emerald-950 bg-emerald-950 border-2 border-emerald-600/[0.15] shadow-[0_8px_32px_0_rgba(16,185,129,0.2)] after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.2),rgba(0,0,0,0.3)_50%,rgba(0,0,0,0.6)_100%)]"
+              >
+                <span className="relative z-10 font-semibold">Send Message</span>
               </Button>
             </form>
           </div>

@@ -138,12 +138,11 @@ export default function Hero({
             initial="hidden"
             animate="visible"
           >
-            <Link href="\Resume.pdf" download={true}>
+            <Link href="\TahaSirajResume.pdf" download={true}>
               <Button
-                variant="gooeyLeft"
-                className="font-bold text-lg rounded-full bg-gradient-to-r from-emerald-800 via-emerald-600 to-emerald-800 p-6 items-center justify-center"
+                className="font-bold text-lg rounded-full relative overflow-hidden bg-emerald-950 hover:bg-emerald-950 border-2 border-emerald-600/[0.15] shadow-[0_8px_32px_0_rgba(16,185,129,0.2)] after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.2),rgba(0,0,0,0.3)_50%,rgba(0,0,0,0.6)_100%)] transition-transform duration-300 p-6 items-center justify-center"
               >
-                Download Resume <Download className="ml-2 h-5 w-5" />
+                Download Resume <Download className="ml-2 h-5 w-5 text-white" />
               </Button>
             </Link>
           </motion.div>

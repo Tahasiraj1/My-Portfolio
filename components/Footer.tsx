@@ -10,7 +10,9 @@ const Footer = () => {
             <AnimatedShinyText>TAHA SIRAJ</AnimatedShinyText>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-slate-700/40 text-center text-sm">
+        <div className="mt-12 pt-8 text-center text-sm relative">
+          {/* Shiny separator with glow effect */}
+          <div className="absolute top-0 left-0 right-0 mx-4 h-0.5 bg-gradient-to-r from-black/55 via-emerald-700 to-black/55 shadow-[0_0_20px_rgba(16,185,129,0.3)] rounded-full" />
           <p className='text-gray-600'>&copy; {new Date().getFullYear()}. All rights reserved.</p>
         </div>
       </div>

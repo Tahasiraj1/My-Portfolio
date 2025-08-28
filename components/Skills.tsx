@@ -26,28 +26,6 @@ import { GripVertical } from "lucide-react";
 // Enhanced skills data with proficiency and categories
 const initialSkills = [
   {
-    name: "HTML",
-    id: "1",
-    icon: <ImHtmlFive className="fill-orange-700" size={60} />,
-    dndIcon: 'text-orange-400',
-    proficiency: 90,
-    yearsExperience: 1,
-    color: "bg-orange-500",
-    ring: "ring-orange-500",
-    gradient: "bg-gradient-to-r from-orange-500 to-orange-700",
-  },
-  {
-    name: "CSS",
-    id: "2",
-    icon: <SiCss3 className="fill-blue-500" size={60} />,
-    dndIcon: 'text-blue-300',
-    proficiency: 65,
-    yearsExperience: 1,
-    color: "bg-blue-500",
-    ring: "ring-blue-500",
-    gradient: "bg-gradient-to-r from-blue-500 to-blue-700",
-  },
-  {
     name: "Node.js",
     id: "3",
     icon: <FaNodeJs className="fill-lime-400" size={60} />,
