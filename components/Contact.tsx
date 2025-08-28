@@ -131,8 +131,10 @@ const Contact = () => {
               />
               <Button 
                 type="submit" 
-                className="w-full relative overflow-hidden hover:bg-emerald-950 bg-emerald-950 border-2 border-emerald-600/[0.15] shadow-[0_8px_32px_0_rgba(16,185,129,0.2)] after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.2),rgba(0,0,0,0.3)_50%,rgba(0,0,0,0.6)_100%)]"
+                className="w-full relative overflow-hidden hover:bg-emerald-950 bg-emerald-950 border-2 border-emerald-600/[0.15] shadow-[0_8px_32px_0_rgba(16,185,129,0.2)] after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.2),rgba(0,0,0,0.3)_50%,rgba(0,0,0,0.6)_100%)] group"
               >
+                {/* Shining gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
                 <span className="relative z-10 font-semibold">Send Message</span>
               </Button>
             </form>
