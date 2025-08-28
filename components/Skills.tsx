@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ImHtmlFive } from "react-icons/im";
-import { SiCss3, SiTypescript, SiStreamlit, SiSanity } from "react-icons/si";
+import { SiTypescript, SiStreamlit, SiSanity } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";

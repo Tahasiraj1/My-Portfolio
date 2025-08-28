@@ -156,18 +156,34 @@ function ProjectCard({ project }: { project: Project }) {
         damping: 24,
       }}
     >
-      <div className="flex flex-col items-start space-y-3">
+      <div className="flex flex-col items-start space-y-3 group">
         <MorphingDialogTrigger>
-          <div className={`p-4 bg-gradient-to-br ${gradient} rounded-2xl relative overflow-hidden group transition-transform duration-300`}>
+          <div className={`p-4 bg-gradient-to-br ${gradient} rounded-2xl relative overflow-hidden transition-all duration-500 ease-out group-hover:pb-20 group-hover:rounded-b-3xl`}>
             {/* Animated gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
             <MorphingDialogImage
               src={project.images[0]}
               alt={project.title}
-              className="h-[250px] w-full object-cover object-top rounded-xl relative z-10"
+              className="h-[250px] w-full object-cover object-top mb-2 rounded-xl relative z-10"
             />
+            
+            {/* Sliding content that appears on hover - slides up from below */}
+            <div className="absolute bottom-0 left-0 right-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+              <div className="bg-gradient-to-t from-black/95 via-black/80 to-transparent p-4 rounded-b-2xl">
+                <div className="space-y-1">
+                  <h3 className="text-lg font-semibold text-white drop-shadow-lg">
+                    {project.title}
+                  </h3>
+                  <p className="text-xs text-gray-200 leading-relaxed line-clamp-2">
+                    {project.description}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="mt-3">
+          
+          {/* Original title and description that slides up into the box on hover */}
+          <div className="mt-3 transition-all duration-500 ease-out group-hover:-translate-y-24 group-hover:opacity-0 relative z-20">
             <MorphingDialogTitle className="text-xl font-medium text-white">
               {project.title}
             </MorphingDialogTitle>
