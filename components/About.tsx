@@ -17,18 +17,24 @@ const About = () => {
         >
           <div className="m-4 font-mono text-base sm:text-lg space-y-4 text-gray-300">
             <p>
-                I&apos;m a <strong>TypeScript, React, and Next.js Developer</strong> with a passion for building seamless, high-performance web applications. 
-                With experience in frameworks like <strong>Tailwind CSS</strong>, I specialize in crafting dynamic and responsive user interfaces that enhance user experience.
+                I&apos;m a <strong>Full-Stack Developer</strong> specializing in <strong>AI-powered solutions</strong> and modern web development. 
+                With expertise in <strong>TypeScript, React, and Next.js</strong>, I build intelligent applications that combine cutting-edge AI technology 
+                with seamless user experiences.
             </p>
             <p>
-                Currently, I&apos;m diving into the exciting world of <strong>Agentic AI</strong>, exploring how to integrate intelligence into applications using 
-                the <strong>OpenAI Agents SDK</strong>. My goal is to bridge the gap between AI and web development, creating innovative solutions that push 
-                the boundaries of what&apos;s possible with AI.
+                My passion lies in creating <strong>AI agents and automation solutions</strong> that transform how businesses operate. 
+                I work extensively with the <strong>OpenAI Agents SDK</strong> to develop intelligent systems that can handle complex tasks, 
+                from email automation to data processing and analysis.
             </p>
             <p>
-                When I&apos;m not coding, you&apos;ll find me experimenting with new technologies, refining my craft, and staying ahead of the ever-evolving web ecosystem.
+                I also specialize in crafting <strong>stunning portfolio websites</strong> and modern web applications that showcase your work 
+                and help you stand out in the digital landscape. Every project I create is built with performance, scalability, and user experience in mind.
             </p>
-            <p><strong>Let&apos;s build something amazing together! 🚀</strong></p>
+            <p>
+                Whether you need an AI-powered solution to streamline your workflow, a modern website to showcase your portfolio, 
+                or custom automation to boost your productivity, I&apos;m here to bring your vision to life.
+            </p>
+            <p><strong>Ready to build something extraordinary? Let&apos;s create the future together! 🚀</strong></p>
           </div>
         </motion.div>
       </section>
