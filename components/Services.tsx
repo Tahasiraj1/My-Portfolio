@@ -200,7 +200,7 @@ const Services = () => {
                 Ready to Start Your Project?
               </h3>
               <p className="text-gray-300 text-sm">
-                Let's discuss how I can help bring your ideas to life
+                Let&apos;s discuss how I can help bring your ideas to life
               </p>
             </div>
             <Button 

@@ -13,18 +13,8 @@ interface GradientBlobProps {
 export const GradientBlob: React.FC<GradientBlobProps> = ({
   colors,
   blur = 40,
-  duration = 10,
   size = 300,
 }) => {
-  const variants = {
-    initial: { scale: 1, x: 0, y: 0, rotate: 0 },
-    animate: {
-      scale: [1, 1.1, 1],
-      x: [0, 100, 0],
-      y: [0, 100, 0],
-      rotate: [0, 90, 0],
-    },
-  }
 
   return (
     <motion.div
